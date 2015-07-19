@@ -32,7 +32,7 @@ class zacksFetchStockRank(HTMLParser):
 			return
 		#response = urllib.request.urlopen('http://www.zacks.com/stock/quote/' + self.stock.symbol)
 		#html = str(response.read())
-		html = open("sito.html", "r").read()
+		html = open("test_zacksito", "r").read()
 		html = html.replace("\\n", "")
 		self.feed(html)
 		# print(html)
@@ -149,7 +149,7 @@ class zacksFetchTop(HTMLParser):
 		#response = urllib.request.urlopen('http://www.zacks.com/')
 		#html = str(response.read())
 		#html = html.replace("\\n", "")
-		html = open("outputp2", "r").read()
+		html = open("test_zackcom", "r").read()
 		html = html.replace(" class\"truncated_text_two\"", "")
 		self.feed(html)
 		# print(html)
