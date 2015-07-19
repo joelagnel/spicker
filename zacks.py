@@ -117,7 +117,9 @@ class zacksFetchStock(HTMLParser):
 			return
 		# print (data)
 
-class zacksFetchTopIncome(HTMLParser):
+# Don't use directly, derive class and set topmover_cat
+class zacksFetchTop(HTMLParser):
+	topmover_cat = ""
 	unknown = 0
 	div_found = 1
 	tbody_found = 2
@@ -129,14 +131,17 @@ class zacksFetchTopIncome(HTMLParser):
 	end_of_tr = 8
 	end_of_rows = 9
 	state = unknown
-	cur_stock = None
-	all_stocks = []
+
+	def __init__(self):
+		HTMLParser.__init__(self)
+		self.cur_stock = None
+		self.all_stocks = []
 
 	def handle_starttag(self, tag, attrs):
 		if self.state == self.end_of_rows:
 			return
 		prev_state = self.state
-		if self.state == self.unknown and tag == "div" and len(attrs) > 0 and attrs[0][1] == "topmovers_income":
+		if self.state == self.unknown and tag == "div" and len(attrs) > 0 and attrs[0][1] == ("topmovers_" + self.topmover_cat):
 			self.state = self.div_found
 		elif self.state == self.div_found and tag == "tbody":
 			self.state = self.tbody_found
@@ -208,95 +213,11 @@ class zacksFetchTopIncome(HTMLParser):
 		self.feed(html)
 		# print(html)
 
-class zacksFetchTopGrowth(HTMLParser):
-	unknown = 0
-	div_found = 1
-	tbody_found = 2
-	tr_found = 3
-	td_name_found = 4
-	td_symbol_found = 5
-	td_price_found = 6
-	td_chg_found = 7
-	end_of_tr = 8
-	end_of_rows = 9
-	state = unknown
-	cur_stock = None
-	all_stocks = []
+class zacksFetchTopGrowth(zacksFetchTop):
+	topmover_cat = "growth"
 
-	def handle_starttag(self, tag, attrs):
-		if self.state == self.end_of_rows:
-			return
-		# prev_state = self.state
-		if self.state == self.unknown and tag == "div" and len(attrs) > 0 and attrs[0][1] == "topmovers_growth":
-			self.state = self.div_found
-		elif self.state == self.div_found and tag == "tbody":
-			self.state = self.tbody_found
-		elif (self.state == self.tbody_found or self.state == self.end_of_tr) and tag == "tr":
-			self.state = self.tr_found
-		elif self.state == self.tr_found and tag == "td":
-			self.cur_stock = ZStock("");
-			self.all_stocks.append(self.cur_stock)
-			self.state = self.td_name_found
-		elif tag == "td":
-			if self.state == self.td_name_found:
-				self.state = self.td_symbol_found
-			elif self.state == self.td_symbol_found:
-				self.state = self.td_price_found
-			elif self.state == self.td_price_found:
-				self.state = self.td_chg_found
-			else:
-				return
-		else:
-			return
-		# print(tag, str(attrs))
-		# print("PREVIOUS state",  prev_state, "new state", self.state)
-
-	def handle_endtag(self, tag):
-		if self.state == self.end_of_rows or self.state == self.unknown:
-			return
-		# print("/" + tag)
-		# prev_state = self.state
-		if tag == "tbody":
-			self.state = self.end_of_rows
-			# We're done getting all top stocks, now goto individual stocks
-			# and update the change
-			for s in self.all_stocks:
-				s.update_latest()
-			# Only include strong buys
-			self.all_stocks = list(filter(lambda x: x.z_rating == 1, self.all_stocks))
-		elif tag == "tr":
-			self.state = self.end_of_tr
-		else:
-			return
-		# print("PREVIOUS state",  prev_state, "new state", self.state)
-		# print("Encountered an end tag :", tag)
-
-	def handle_data(self, data):
-		data = data.strip()
-		if (len(data) == 0):
-			return
-		if self.state == self.td_name_found:
-			self.cur_stock.name = str(data)
-		elif self.state == self.td_symbol_found:
-			self.cur_stock.symbol = str(data)
-		elif self.state == self.td_price_found:
-			self.cur_stock.price = float(str(data))
-		# elif self.state == self.td_chg_found:
-		#	self.cur_stock.change = str(data)
-		else:
-			return
-		# print("Encountered some data, :", data, " len ", len(data))
-
-	# Current this only updates the Name, symbol, price and ranking of
-	# the top stocks on zack.com, change value is updated directly by ZStock class
-	def fetch_parse(self):
-		response = urllib.request.urlopen('http://www.zacks.com/')
-		html = str(response.read())
-		html = html.replace("\\n", "")
-		# html = open("test_zackcom", "r").read()
-		html = html.replace(" class\"truncated_text_two\"", "")
-		self.feed(html)
-		# print(html)
+class zacksFetchTopIncome(zacksFetchTop):
+	topmover_cat = "income"
 
 def get_top_stocks():
 	zf_growth = zacksFetchTopGrowth()
