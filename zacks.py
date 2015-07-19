@@ -4,6 +4,8 @@
 
 from html.parser import HTMLParser
 import urllib.request
+import re
+match_last_price = re.compile("([0-9\.]+)")
 
 class Stock():
 	def __init__(self, symbol):
@@ -12,18 +14,22 @@ class Stock():
 		self.price = ""
 		self.change = ""
 		self.rating = "-1"
-	def update_rating(self):
-		zfs = zacksFetchStockRank()
+	def update_latest(self):
+		zfs = zacksFetchStock()
 		zfs.update_stock(self)
 	def __repr__(self):
-		return "STOCK " + self.name + " (" + self.symbol + ") " + "Price: " + self.price + " Change: " + self.change + " Ranking: " + self.rating
+		return "STOCK " + self.name + " (" + self.symbol + ") "\
+			+ "Price: " + self.price + " Change: " + self.change + " Ranking: " + self.rating
 
-class zacksFetchStockRank(HTMLParser):
+class zacksFetchStock(HTMLParser):
 	unknown = 1
 	div_found = 2
 	span_found = 3
 	end = 4
+	p_last_price = 5
+	p_net_change = 6
 	state = unknown
+	
 	stock = ""
 	
 	def update_stock(self, stock):
@@ -40,10 +46,20 @@ class zacksFetchStockRank(HTMLParser):
 	def handle_starttag(self, tag, attrs):
 		if self.state == self.end:
 			return
-		if self.state == self.unknown and tag == "div" and len(attrs) > 0 and attrs[0][1] == "zr_rankbox":
+		# Rank
+		if self.state == self.unknown and tag == "div" \
+			and len(attrs) > 0 and attrs[0][1] == "zr_rankbox":
 			self.state = self.div_found
 		elif self.state == self.div_found and tag == "span":
 			self.state = self.span_found
+		# Price
+		elif self.state == self.unknown and tag == "p" and len(attrs) > 0 \
+				and attrs[0][1] == "last_price":
+			self.state = self.p_last_price
+		# Change
+		elif self.state == self.unknown and tag == "p" and len(attrs) == 2 \
+			and attrs[1][1] == "net_change":
+			self.state = self.p_net_change
 		else:
 			return
 		# print(tag, attrs)
@@ -51,24 +67,47 @@ class zacksFetchStockRank(HTMLParser):
 	def handle_endtag(self, tag):
 		if self.state == self.end:
 			return
+		# Rank
 		if self.state == self.span_found and tag == "span":
 			self.state = self.div_found
 		elif self.state == self.div_found and tag == "div":
+			# Mark finding the rank as the end, no other parsing can happen
 			self.state = self.end
+		# Price
+		elif self.state == self.p_last_price and tag == "p":
+			self.state = self.unknown
+		# Change
+		elif self.state == self.p_net_change and tag == "p":
+			self.state = self.unknown
 		else:
 			return
 		# print("/" + tag)
+
 	def handle_data(self, data):
 		if self.state == self.end:
 			return
 		data = data.strip()
 		if (len(data) == 0):
 			return
+		# Rank
 		if self.state == self.span_found and data != "&nbsp;":
 			self.stock.rating = data
-			# print (data)
+			# We consider finding the Rank as the end of any processing
 			self.state = self.end
-			
+		# Price
+		elif self.state == self.p_last_price:
+			m = match_last_price.search(data)
+			if m:
+				self.stock.price = m.group(1)
+				self.state = self.unknown
+		# Change
+		elif self.state == self.p_net_change:
+			self.stock.change = data.replace(" ", "")
+			self.state = self.unknown
+		else:
+			return
+		# print (data)
+
 class zacksFetchTop(HTMLParser):
 	unknown = 0
 	div_found = 1
@@ -119,9 +158,9 @@ class zacksFetchTop(HTMLParser):
 		# prev_state = self.state
 		if tag == "tbody":
 			self.state = self.end_of_rows
-			# We're done getting all the stocks, not fetch rating
+			# We're done getting all top stocks, now goto individual stocks and update
 			for s in self.all_stocks:
-				s.update_rating()
+				s.update_latest()
 		elif tag == "tr":
 			self.state = self.end_of_tr
 		else:
