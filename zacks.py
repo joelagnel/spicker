@@ -163,6 +163,8 @@ class zacksFetchTopIncome(HTMLParser):
 			# and update the change
 			for s in self.all_stocks:
 				s.update_latest()
+			# Only include strong buys
+			self.all_stocks = list(filter(lambda x: x.z_rating == 1, self.all_stocks))
 		elif tag == "tr":
 			self.state = self.end_of_tr
 		else:
@@ -252,6 +254,8 @@ class zacksFetchTopGrowth(HTMLParser):
 			# and update the change
 			for s in self.all_stocks:
 				s.update_latest()
+			# Only include strong buys
+			self.all_stocks = list(filter(lambda x: x.z_rating == 1, self.all_stocks))
 		elif tag == "tr":
 			self.state = self.end_of_tr
 		else:
