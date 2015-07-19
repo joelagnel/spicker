@@ -13,7 +13,7 @@ class Stock():
 		self.name = ""
 		self.price = 0.0
 		self.change = ""
-		self.rating = -1
+		self.z_rating = -1
 	def update_latest(self):
 		print("Updating " + self.symbol)
 		zfs = zacksFetchStock()
@@ -21,7 +21,7 @@ class Stock():
 	def __repr__(self):
 		return "STOCK " + self.name + " (" + self.symbol + ") "\
 			+ "Price: " + str(self.price) + " Change: " + \
-			self.change + " Rating: " + str(self.rating)
+			self.change + " Rating: " + str(self.z_rating)
 
 class zacksFetchStock(HTMLParser):
 	unknown = 1
@@ -92,7 +92,7 @@ class zacksFetchStock(HTMLParser):
 			return
 		# Rank
 		if self.state == self.span_found and data != "&nbsp;":
-			self.stock.rating = int(data)
+			self.stock.z_rating = int(data)
 			# We consider finding the Rank as the end of any processing
 			self.state = self.end
 		# Price
@@ -136,7 +136,6 @@ class zacksFetchTopIncome(HTMLParser):
 			self.state = self.tr_found
 		elif self.state == self.tr_found and tag == "td":
 			self.cur_stock = Stock("");
-			self.cur_stock.rating = 1
 			self.all_stocks.append(self.cur_stock)
 			self.state = self.td_name_found
 		elif tag == "td":
@@ -226,7 +225,6 @@ class zacksFetchTopGrowth(HTMLParser):
 			self.state = self.tr_found
 		elif self.state == self.tr_found and tag == "td":
 			self.cur_stock = Stock("");
-			self.cur_stock.rating = 1
 			self.all_stocks.append(self.cur_stock)
 			self.state = self.td_name_found
 		elif tag == "td":
@@ -299,5 +297,3 @@ if __name__ == "__main__":
 	all = get_top_stocks()
 	for s in all:
 		print(s)
-
-
