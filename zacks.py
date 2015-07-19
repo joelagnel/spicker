@@ -11,15 +11,16 @@ class Stock():
 	def __init__(self, symbol):
 		self.symbol = symbol
 		self.name = ""
-		self.price = ""
+		self.price = 0.0
 		self.change = ""
-		self.rating = "-1"
+		self.rating = -1
 	def update_latest(self):
 		zfs = zacksFetchStock()
 		zfs.update_stock(self)
 	def __repr__(self):
 		return "STOCK " + self.name + " (" + self.symbol + ") "\
-			+ "Price: " + self.price + " Change: " + self.change + " Ranking: " + self.rating
+			+ "Price: " + str(self.price) + " Change: " + \
+			self.change + " Rating: " + str(self.rating)
 
 class zacksFetchStock(HTMLParser):
 	unknown = 1
@@ -29,8 +30,7 @@ class zacksFetchStock(HTMLParser):
 	p_last_price = 5
 	p_net_change = 6
 	state = unknown
-	
-	stock = ""
+	stock = None
 	
 	def update_stock(self, stock):
 		self.stock = stock
@@ -91,14 +91,14 @@ class zacksFetchStock(HTMLParser):
 			return
 		# Rank
 		if self.state == self.span_found and data != "&nbsp;":
-			self.stock.rating = data
+			self.stock.rating = int(data)
 			# We consider finding the Rank as the end of any processing
 			self.state = self.end
 		# Price
 		elif self.state == self.p_last_price:
 			m = match_last_price.search(data)
 			if m:
-				self.stock.price = m.group(1)
+				self.stock.price = float(m.group(1))
 				self.state = self.unknown
 		# Change
 		elif self.state == self.p_net_change:
@@ -136,6 +136,7 @@ class zacksFetchTop(HTMLParser):
 			self.state = self.tr_found
 		elif self.state == self.tr_found and tag == "td":
 			self.cur_stock = Stock("");
+			self.cur_stock.rating = 1
 			self.all_stocks.append(self.cur_stock)
 			self.state = self.td_name_found
 		elif tag == "td":
@@ -158,7 +159,8 @@ class zacksFetchTop(HTMLParser):
 		# prev_state = self.state
 		if tag == "tbody":
 			self.state = self.end_of_rows
-			# We're done getting all top stocks, now goto individual stocks and update
+			# We're done getting all top stocks, now goto individual stocks
+			# and update the change
 			for s in self.all_stocks:
 				s.update_latest()
 		elif tag == "tr":
@@ -177,13 +179,15 @@ class zacksFetchTop(HTMLParser):
 		elif self.state == self.td_symbol_found:
 			self.cur_stock.symbol = str(data)
 		elif self.state == self.td_price_found:
-			self.cur_stock.price = str(data)
-		elif self.state == self.td_chg_found:
-			self.cur_stock.change = str(data)
+			self.cur_stock.price = float(str(data))
+		# elif self.state == self.td_chg_found:
+		#	self.cur_stock.change = str(data)
 		else:
 			return
 		# print("Encountered some data, :", data, " len ", len(data))
 
+	# Current this only updates the Name, symbol, price and ranking of
+	# the top stocks on zack.com, change value is updated directly by Stock class
 	def fetch_parse(self):
 		#response = urllib.request.urlopen('http://www.zacks.com/')
 		#html = str(response.read())
