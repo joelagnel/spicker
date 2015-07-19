@@ -15,6 +15,7 @@ class Stock():
 		self.change = ""
 		self.rating = -1
 	def update_latest(self):
+		print("Updating " + self.symbol)
 		zfs = zacksFetchStock()
 		zfs.update_stock(self)
 	def __repr__(self):
@@ -36,9 +37,9 @@ class zacksFetchStock(HTMLParser):
 		self.stock = stock
 		if self.stock.symbol == "":
 			return
-		#response = urllib.request.urlopen('http://www.zacks.com/stock/quote/' + self.stock.symbol)
-		#html = str(response.read())
-		html = open("test_zacksito", "r").read()
+		response = urllib.request.urlopen('http://www.zacks.com/stock/quote/' + self.stock.symbol)
+		html = str(response.read())
+		# html = open("test_zacksito", "r").read()
 		html = html.replace("\\n", "")
 		self.feed(html)
 		# print(html)
@@ -108,7 +109,97 @@ class zacksFetchStock(HTMLParser):
 			return
 		# print (data)
 
-class zacksFetchTop(HTMLParser):
+class zacksFetchTopIncome(HTMLParser):
+	unknown = 0
+	div_found = 1
+	tbody_found = 2
+	tr_found = 3
+	td_name_found = 4
+	td_symbol_found = 5
+	td_price_found = 6
+	td_chg_found = 7
+	end_of_tr = 8
+	end_of_rows = 9
+	state = unknown
+	cur_stock = None
+	all_stocks = []
+
+	def handle_starttag(self, tag, attrs):
+		if self.state == self.end_of_rows:
+			return
+		prev_state = self.state
+		if self.state == self.unknown and tag == "div" and len(attrs) > 0 and attrs[0][1] == "topmovers_income":
+			self.state = self.div_found
+		elif self.state == self.div_found and tag == "tbody":
+			self.state = self.tbody_found
+		elif (self.state == self.tbody_found or self.state == self.end_of_tr) and tag == "tr":
+			self.state = self.tr_found
+		elif self.state == self.tr_found and tag == "td":
+			self.cur_stock = Stock("");
+			self.cur_stock.rating = 1
+			self.all_stocks.append(self.cur_stock)
+			self.state = self.td_name_found
+		elif tag == "td":
+			if self.state == self.td_name_found:
+				self.state = self.td_symbol_found
+			elif self.state == self.td_symbol_found:
+				self.state = self.td_price_found
+			elif self.state == self.td_price_found:
+				self.state = self.td_chg_found
+			else:
+				return
+		else:
+			return
+		# print(tag, str(attrs))
+		# print("PREVIOUS state",  prev_state, "new state", self.state)
+
+	def handle_endtag(self, tag):
+		if self.state == self.end_of_rows or self.state == self.unknown:
+			return
+		# print("/" + tag)
+		prev_state = self.state
+		if tag == "tbody":
+			self.state = self.end_of_rows
+			# We're done getting all top stocks, now goto individual stocks
+			# and update the change
+			for s in self.all_stocks:
+				s.update_latest()
+		elif tag == "tr":
+			self.state = self.end_of_tr
+		else:
+			return
+		# print("PREVIOUS state",  prev_state, "new state", self.state)
+		# print("Encountered an end tag :", tag)
+
+	def handle_data(self, data):
+		data = data.strip()
+		if (len(data) == 0):
+			return
+		# print("self.state ", self.state, " data", data)
+		if self.state == self.td_name_found:
+			self.cur_stock.name = str(data)
+		elif self.state == self.td_symbol_found:
+			self.cur_stock.symbol = str(data)
+		elif self.state == self.td_price_found:
+			self.cur_stock.price = float(str(data))
+		# elif self.state == self.td_chg_found:
+		#	self.cur_stock.change = str(data)
+		else:
+			return
+		# print("Encountered some data, :", data, " len ", len(data))
+
+	# Current this only updates the Name, symbol, price and ranking of
+	# the top stocks on zack.com, change value is updated directly by Stock class
+	def fetch_parse(self):
+		response = urllib.request.urlopen('http://www.zacks.com/')
+		html = str(response.read())
+		html = html.replace("\\n", "")
+		# html = open("test_zackcom", "r").read()
+		html = html.replace(" class\"truncated_text_two\"", "")
+		self.feed(html)
+		# print(html)
+
+class zacksFetchTopGrowth(HTMLParser):
 	unknown = 0
 	div_found = 1
 	tbody_found = 2
@@ -127,7 +218,6 @@ class zacksFetchTop(HTMLParser):
 		if self.state == self.end_of_rows:
 			return
 		# prev_state = self.state
-		# print(tag, str(attrs))
 		if self.state == self.unknown and tag == "div" and len(attrs) > 0 and attrs[0][1] == "topmovers_growth":
 			self.state = self.div_found
 		elif self.state == self.div_found and tag == "tbody":
@@ -147,13 +237,14 @@ class zacksFetchTop(HTMLParser):
 			elif self.state == self.td_price_found:
 				self.state = self.td_chg_found
 			else:
-				raise Exception("Parser Error! unexpected td")
+				return
 		else:
 			return
+		# print(tag, str(attrs))
 		# print("PREVIOUS state",  prev_state, "new state", self.state)
 
 	def handle_endtag(self, tag):
-		if self.state == self.end_of_rows:
+		if self.state == self.end_of_rows or self.state == self.unknown:
 			return
 		# print("/" + tag)
 		# prev_state = self.state
@@ -189,18 +280,20 @@ class zacksFetchTop(HTMLParser):
 	# Current this only updates the Name, symbol, price and ranking of
 	# the top stocks on zack.com, change value is updated directly by Stock class
 	def fetch_parse(self):
-		#response = urllib.request.urlopen('http://www.zacks.com/')
-		#html = str(response.read())
-		#html = html.replace("\\n", "")
-		html = open("test_zackcom", "r").read()
+		response = urllib.request.urlopen('http://www.zacks.com/')
+		html = str(response.read())
+		html = html.replace("\\n", "")
+		# html = open("test_zackcom", "r").read()
 		html = html.replace(" class\"truncated_text_two\"", "")
 		self.feed(html)
 		# print(html)
 
 def get_top_stocks():
-	zf = zacksFetchTop()
-	zf.fetch_parse()
-	return zf.all_stocks
+	zf_growth = zacksFetchTopGrowth()
+	zf_growth.fetch_parse()
+	zf_income = zacksFetchTopIncome()
+	zf_income.fetch_parse()
+	return zf_growth.all_stocks + zf_income.all_stocks
 
 if __name__ == "__main__":
 	all = get_top_stocks()
