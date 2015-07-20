@@ -1,0 +1,2368 @@
+b'<!DOCTYPE HTML>
+<!--[if lt IE 9 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+    <title>Stock Screener - Stock Research Reports and Ratings - TheStreet</title>
+     <script type="text/javascript">
+    dataLayer = [];
+    window.universal_variable = {   
+        page: {
+                category: "ratingsreports",
+                subcategory: "summary"
+            }
+    };
+    window.universal_variable.page.environment = "production";
+    window.universal_variable.page.storyTypeName  ="";
+    window.universal_variable.page.authorName="";
+\twindow.universal_variable.page.storyId  ="";
+    window.universal_variable.page.storyTypeDirName="";
+    window.universal_variable.page.contentType = "";
+    window.universal_variable.page.hasEmbeddedVideo=false;
+</script>
+
+<!-- origin:19 Jul 2015 17:52:53 GMT -->
+<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+    <script type="text/javascript">
+        if (typeof TSCM == "undefined") { TSCM = {}; }
+        if (typeof TSCM.cfg == "undefined") { TSCM.cfg = {}; }
+        TSCM.cfg.contextRoot = "http://www.thestreet.com";
+        TSCM.pages = {};
+        TSCM.pages.PageInfo = {};
+        TSCM.metadata = {};
+        var premiumPage;    //header.jsp adds iframe behind recent quotes popup so it will float over pdf
+        TSCM.cfg.imagesBaseUrl = "http://s.thestreet.com/files/tsc/v2008";
+        TSCM.cfg.cssBaseUrl = "http://i.thestreet-static.com/files/tsc/v2008/css/_1437083940100/min";
+        var thisMarginFlag = 1;
+        TSCM.cfg.jsBaseUrl = "http://i.thestreet-static.com/files/tsc/v2008/js/_1437083940100/min";
+        TSCM.cfg.staticFilePath = "http://www.thestreet.com/files/tsc/v2008";
+        TSCM.cfg.useStageDART = "false";
+        TSCM.cfg.RMportal = false;
+        TSCM.cfg.commerceBaseUrl = "https://secure2.thestreet.com";
+        TSCM.cfg.userManagerProfileBaseUrl = "https://secure.thestreet.com";
+        TSCM.cfg.thestreetBaseUrl = "http://www.thestreet.com";
+        TSCM.cfg.commentCountOn = "false";
+
+        var URL = new String(window.location);
+        var urlFragments = URL.split('/');
+        var ROOT =root= 'http://' + urlFragments[2];
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.9.0/build/autocomplete/assets/skins/sam/autocomplete.css&2.9.0/build/datatable/assets/skins/sam/datatable.css"><!-- Combo-handled YUI CSS files: -->
+            <script type="text/javascript" src="http://yui.yahooapis.com/combo?2.9.0/build/utilities/utilities.js&2.9.0/build/datasource/datasource-min.js&2.9.0/build/autocomplete/autocomplete-min.js&2.9.0/build/container/container_core-min.js&2.9.0/build/cookie/cookie-min.js&2.9.0/build/datatable/datatable-min.js&2.9.0/build/json/json-min.js"></script><!-- Combo-handled YUI JS files: -->
+        <script type="text/javascript" src="http://i.thestreet-static.com/files/tsc/v2008/js/_1437083940100/min/combined.js"></script>
+            <link rel="stylesheet" type="text/css" href="http://i.thestreet-static.com/files/tsc/v2008/css/_1437083940100/min/yui/yui.css"/>
+
+            
+        
+        <meta name="DESCRIPTION" content="Research stock ratings and reports with free access to TheStreet's stock screener. TheStreet's model analyzes fundamentals, financials and performance.">
+        <meta name="keywords" content="stock reports, mutual fund report, ETF report" />        
+        <meta name="contentType" content="ratings">
+
+        <link rel="stylesheet" type="text/css" href="http://i.thestreet-static.com/files/tsc/v2008/css/_1437083940100/min/market.css" />
+        <link rel="stylesheet" type="text/css" href="http://i.thestreet-static.com/files/tsc/v2008/css/_1437083940100/min/quote-related.css" />
+        <link rel="stylesheet" type="text/css" href="http://i.thestreet-static.com/files/tsc/v2008/css/_1437083940100/min/yui/skins/tsc/datatable.css" />
+        <link rel="stylesheet" type="text/css" href="http://i.thestreet-static.com/files/tsc/v2008/css/_1437083940100/min/ratings.css" />
+
+\t   \t<!-- Combo-handled YUI CSS files: -->
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.8.1/build/progressbar/assets/skins/sam/progressbar.css">
+        <script type="text/javascript" src="http://yui.yahooapis.com/combo?2.8.1/build/yahoo-dom-event/yahoo-dom-event.js&2.8.1/build/element/element-min.js&2.8.1/build/progressbar/progressbar-min.js"></script> 
+
+        <script type="text/javascript">
+    //* Global Functions *//
+    function metadataRegisterNS(ns){
+        var nsParts = ns.split(".");
+        var root = window;
+
+        for(var i=0; i<nsParts.length; i++){
+            if(typeof root[nsParts[i]] == "undefined"){
+                root[nsParts[i]] = new Object();
+            }
+        root = root[nsParts[i]];
+        }
+    }
+    metadataRegisterNS("TSCM.metadata.Page");
+\tmetadataRegisterNS("TSCM.metadata.Ads");
+\tTSCM.metadata.Page.template = "";
+\tTSCM.metadata.Page.contentType = "Ratings Research Center";
+\tTSCM.metadata.Page.sectionFront = "ratingsreports";
+\tTSCM.metadata.Page.subsection = "";
+\tTSCM.metadata.Page.channel= "";
+    TSCM.metadata.Page.products="";
+    TSCM.metadata.Page.events="";
+    TSCM.metadata.Page.override= "false";
+\tTSCM.metadata.Page.searchResults= "";
+\tTSCM.metadata.Page.searchTerm= "";
+\tTSCM.metadata.Page.advancedSearch= "";
+\tTSCM.metadata.Page.searchType= "";
+\tTSCM.metadata.Page.pageType= "";
+\tTSCM.metadata.Page.pageName = "Ratings Research Center:summary - STNG";
+\tTSCM.metadata.Page.pageURL = document.URL;
+\tTSCM.metadata.Page.omOrig ="";
+\tTSCM.metadata.Ads.site = "tsc-ratingsreports/ratingsreports-index";
+\tTSCM.metadata.Ads.contextualLinks = "";
+    TSCM.metadata.Page.searchPagination = "";
+\t// reporting hierarchies
+\tTSCM.metadata.Page.contentCat = ["tsc"];
+\tTSCM.metadata.Page.contentCat.push("ratingsreports");
+\tTSCM.metadata.Ads.targeting = "";
+\t</script>
+
+<!-- Combo-handled YUI CSS files: -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.9.0/build/slider/assets/skins/sam/slider.css&2.9.0/build/tabview/assets/skins/sam/tabview.css">
+<!-- Combo-handled YUI JS files: -->
+<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.9.0/build/dragdrop/dragdrop-min.js&2.9.0/build/slider/slider-min.js&2.9.0/build/element/element-min.js&2.9.0/build/tabview/tabview-min.js"></script>
+<script type="text/javascript" src="http://i.thestreet-static.com/files/tsc/v2008/js/_1437083940100/min/ratings/rrc.js"></script>
+
+<style type="text/css">
+   #latest_upgrades_downgrades_dt .yui-dt-liner { padding:2px 4px }
+</style>
+
+<link rel="stylesheet" media="screen" type="text/css" href="http://i.thestreet-static.com/files/tsc/v2008/css/_1437083940100/min/combined.css"/>
+            <meta property="og:site_name" content="TheStreet"/>
+    <meta property="fb:page_id" content="112877175855" />
+    <!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="http://i.thestreet-static.com/files/tsc/v2008/css/_1437083940100/min/ie6/ie6.css" /><![endif]-->
+    <meta name="robots" content="NOODP"/><!-- for google -->
+    <meta name="robots" content="NOYDIR"/><!-- for yahoo -->
+
+    <script type="text/javascript" src="http://i.thestreet-static.com/files/tsc/v2008/js/_1437083940100/min/disqusCommentCount.js"></script>
+       <script type="text/javascript">
+    var forwardSlash="/";
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var useSSL = 'https:' == document.location.protocol;
+        var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+    })();
+</script>
+
+
+
+</head>
+<body  id="skin_optimized_skin" class="skin_optimized_skin">
+<div id="fb-root"></div>
+<div id="form_overlay_opacity"></div>
+<div id="form_frame_holder"></div>
+
+<div id="browserWarning"
+     style="font-family:Arial;font-size:14px;background-color:white;width:100%;height:100%;position:fixed;top:0px;left:0px;z-index: 100000000; display:none;">
+   <div style="background-color:white; width: 100%; float: left; text-align: left;">
+      <div style="background-color:white;">
+         <div style="padding:30px 25px; float: left;">
+            <a href="http://www.thestreet.com"><img class="tstLogo"
+                                                    src="http://s.thestreet.com/files/tsc/v2008/ads/images/2013/tst_logo.png"
+                                                    width="200" height="42" border="0"/></a>
+
+         </div>
+      </div>
+
+   </div>
+   <div style="clear:both; float: left; width: 100%; text-align: center;">
+      <div style="height:100%;background-color:white;text-align:center;margin-top:20px;">
+         Your browser is not supported. Please upgrade to one of the following browsers:
+         <br/> <br/>
+         <a href="http://www.google.com/chrome/?hl=en-US" target="_blank">Google Chrome</a>
+         <br/> <br/>
+         <a href="http://www.mozilla.com/firefox/?hl=en-US" target="_blank">Mozilla Firefox</a>
+         <br/> <br/>
+         <a href="http://www.apple.com/safari/?hl=en-US" target="_blank">Apple Safari</a>
+         <br/> <br/>
+         <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">Microsoft
+            Internet Explorer 9+ </a>
+         <br/> <br/>
+         You may proceed to the site by clicking <a href="javascript:TSTBrowserCheck.closeBrowserMessage();" id="closeBrowserDetect">here</a>, however some pages might not
+         work correctly.
+
+      </div>
+   </div>
+</div><script>
+    var i_am_old_ie = false;
+</script>
+
+<!--[if lte IE 8]>
+<script>
+    var i_am_old_ie = true;
+    if( $('#browserWarning')) {
+        var el = $('#browserWarning');
+        el.css( "display", "block" );
+    }
+    var TSTBrowserCheck = { browserMessageShown:true };
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+
+    TSTBrowserCheck = {
+       browserMessageShown:false,
+       cookieName:"tstbrowsercheck",
+       browserCheckCleared:false,
+
+       browserCheck: function(){
+          try {
+              if(document.cookie.indexOf(TSTBrowserCheck.cookieName) == -1) {
+                  if (i_am_old_ie && $('#browserWarning')) {
+                           var el = $('#browserWarning');
+                           el.css( "display", "block" );
+                           TSTBrowserCheck.browserMessageShown = true;
+                      } else {
+                           //set the cookie for >=ie9
+                           document.cookie = TSTBrowserCheck.cookieName + "=true;path=/;domain=.thestreet.com";
+                   }
+                } else {
+                   //set the cookie for other browsers
+                   document.cookie = TSTBrowserCheck.cookieName + "=true;path=/;domain=.thestreet.com";
+                }
+
+//            if(document.cookie.indexOf(TSTBrowserCheck.cookieName) == -1) {
+//                var uagent = navigator.userAgent;
+//                if (/MSIE (\\d+\\.\\d+);/.test(uagent)){
+//                   var ieversion=new Number(RegExp.$1);
+//                   if (ieversion < 9 && (uagent.indexOf("Trident/") == -1) && $('#browserWarning')) {
+//                       var el = $('#browserWarning');
+//                       el.css( "display", "block" );
+//                       TSTBrowserCheck.browserMessageShown = true;
+//                   } else {
+//                      //set the cookie for >=ie9
+//                      document.cookie = TSTBrowserCheck.cookieName + "=true;path=/;domain=.thestreet.com";
+//                   }
+//                } else {
+//                   //set the cookie for other browsers
+//                   document.cookie = TSTBrowserCheck.cookieName + "=true;path=/;domain=.thestreet.com";
+//                }
+//            }
+          }catch(e){
+              console.log(e.message);
+          }
+       },
+
+       closeBrowserMessage:function(evt){
+          try {
+             //message has been seen and acknowleged. Set cookie
+             document.cookie = TSTBrowserCheck.cookieName + "=true;path=/;domain=.thestreet.com";
+             var el = $('#browserWarning');
+             el.css( "display", "none" );
+             TSTBrowserCheck.browserMessageShown = false;
+             TSTBrowserCheck.browserCheckCleared = true;
+             TSTWelcomOverlay.init();
+          } catch(e){}
+       }
+    };
+
+    TSTBrowserCheck.browserCheck();
+</script>
+
+<style>
+    #welcomeOverlay  {
+        font-family: Arial;
+        background-color: #f4f4f4;
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 100000000;
+    }
+    #welcomeOverlay .headerWrapper {
+        background-color: #000;
+        text-align: center;
+        width: 100%;
+    }
+
+    #welcomeOverlay #topHeader {
+        background-color: #000;
+        padding: 5px 0 0;
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+
+    #welcomeOverlay .tstnavGreayBar {
+        text-align: center;
+        background-color: #282828;
+        width: 100%;
+        clear: both;
+        float: left;
+        height: 36px;
+    }
+
+    #welcomeOverlay #TSTheader {
+        width: 970px;
+        margin: 0 auto;
+        background-color: #000;
+        /*min-height: 74px;*/
+        min-height: 10%;
+    }
+
+    #welcomeOverlay #TSTheader .logo {
+        padding: 2% 0 0;
+        float: left;
+        text-align: center;
+    }
+
+    #topHeader .tstLogo {
+        margin: 7px 0 15px;
+        width: 178px;
+        height: 37px;
+        display: block;
+        background: url('/css/images/tst_logo.svg') left top no-repeat;
+        position: relative;
+        z-index: 2;
+
+    }
+    #topHeader .headerMid {
+        padding: 1% 0 1% 3%;
+        float: left;
+        font-family: Arial;
+        width: 60%;
+        text-align: left;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 10px;
+    }
+
+    #topHeader #factDate {
+        margin: 0 auto;
+        text-align: left;
+        width: 100%;
+        color: #fff;
+        padding: 7px 0 0 10px;
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    #topHeader #fact {
+        margin: 0 auto;
+        text-align: left;
+        width: 100%;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    #topHeader .headerRight {
+        float: right;
+        margin: 1.5% 0 0;
+        padding: 2% 0 0 0;
+        font-size: 18px;
+        font-weight: bold;
+        width: 15%;
+        color: #fff;
+    }
+    #welcomeOverlay #adSection {
+        clear: both;
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    #adSection .adDiv {
+        height: 100%;
+        text-align: center;
+    }
+    #adSection .adTitle {
+        padding: 10px 0;
+        font-weight: bold;
+        color: #212425;
+        font-size: 13px;
+        display: block;
+    }
+</style>
+<div id="welcomeOverlay">
+    <div id="topHeader">
+        <div id="TSTheader" class="clearboth">
+            <div class="logo">
+                <a href="http://www.thestreet.com" class="tstLogo"> </a>
+            </div>
+            <div class="headerMid">
+                <strong style="font-size: 2em;">This Day On The Street</strong><span id="factDate"></span> <div class="midContent" id="fact"></div>
+            </div>
+            <span id="ctSite"><a href="javascript:TSTWelcomOverlay.remove();" class="headerRight">Continue to site</a></span>
+            <span id="ctSiteCountDown" class="headerRight"></span>
+        </div>
+        <div class="tstnavGreayBar"> </div>
+    </div>
+    <div id="adSection">
+        <div class="adDiv">
+            <div class="adTitle">ADVERTISEMENT</div>
+            <div id='div-gpt-ad-welcome'  data-type='gpt-ad' class='googleAd preload placeholder'></div>
+            <!-- end of div-gpt-ad-welcome -->
+        </div>
+    </div>
+</div>
+<!-- end welcomeOverlay div-->
+<script  type="text/javascript">
+
+    $(document).on("welcomeAdRemoved", function(event){
+        fireTSTOnReady();
+    });
+
+    TSTWelcomOverlay = {
+        waitForWelcomeComplete:false,
+        showWelcome:true,
+        fireCompleteEvent: function(){
+            $(document).trigger({
+                type: "welcomeAdRemoved"
+
+            });
+        },
+        remove: function(){
+            $('#welcomeOverlay').hide();
+//            try {
+//                $('#tstSecondDiv').show();
+//            }catch(e){}
+            TSTWelcomOverlay.fireCompleteEvent();
+            window.clearTimeout(window.TSTWelcomOverlayTimeout);
+
+        },
+        getQueryVariable :function(variable){
+            var ref = document.referrer.split('?');
+            if(ref.length == 1) return "";
+            var vars = ref[1].split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                if (decodeURIComponent(pair[0]) == variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return "";
+        },
+        countDown:function(i, callback){
+            // callback = callback || function(){};
+            $('#ctSiteCountDown').html( "Continue in " + i);
+            i--;
+            var int = setInterval(function() {
+                $('#ctSiteCountDown').html( "Continue in " + i);
+                i-- || (clearInterval(int),callback());  //if i is 0, then stop the interval
+            }, 1000);
+        },
+        init:function(){
+            //      _gaq.push(['_trackEvent', 'Debug', "welcome_ad", "eligible"]);
+            if (TSTWelcomOverlay.decideShow()){
+                TSTWelcomOverlay.waitForWelcomeComplete=true;
+
+//                var scriptAd   = document.createElement("script");
+//                scriptAd.type  = "text/javascript";
+//                scriptAd.text="googletag.cmd.push(function() {googletag.pubads().display('/' + '367/tsc-thestreet.com/overlay',[[300,250],[640,480]], 'div-gpt-ad-welcome');});"
+//                document.getElementById("div-gpt-ad-welcome").appendChild(scriptAd);
+//                $("#div-gpt-ad-welcome").append(scriptAd);
+                $("#div-gpt-ad-welcome").removeClass("placeholder");
+                $('#ctSite').hide();
+
+                var  selectedDate = new Date();
+                var day=selectedDate.getDate();
+                var month=selectedDate.getMonth() +1;
+                var dateString =month+"-"+day;
+                var url =  'http://www.thestreet.com/files/tsc/v2008/ads/overlay/welcome/dates/'+dateString+'.html';
+                $.ajax({
+                    type: 'GET',
+                    url: url,
+                    async: false,
+                    jsonpCallback: 'jsonCallback',
+                    contentType: "application/json",
+                    dataType: 'jsonp',
+                    success: function(fact) {
+                        var factDate = fact.substr(0,fact.indexOf('-'));
+                        var factDesc = fact.substr(fact.indexOf('-')+1);
+                        $('#factDate').html(factDate)
+                        $('#fact').html(factDesc);
+                    },
+                    error: function(e) {
+
+                    }
+                });
+
+
+                $('#welcomeOverlay').show();
+//                  try {
+//                    $('#tstSecondDiv').hide();
+//                  }catch(e){}
+                window.TSTWelcomOverlayTimeout=setTimeout(TSTWelcomOverlay.remove,12000);
+                //       _gaq.push(['_trackEvent', 'Debug', "welcome_ad", "shown"])
+
+                //setTimeout(function(){$('#ctSite').show();},3000);
+                TSTWelcomOverlay.countDown(3,function(){
+                    $('#ctSiteCountDown').hide();
+                    $('#ctSite').show();
+                });
+            } else {
+
+                if(typeof TSTBrowserCheck != 'undefined' && typeof TSTBrowserCheck.browserCheckCleared != 'undefined' && TSTBrowserCheck.browserCheckCleared) {
+                    fireTSTOnReady();
+                }
+            }
+
+        },
+        decideShow:function(){
+            try {
+                try{
+                    var isGoogle = navigator.userAgent.toLowerCase().indexOf('googlebot') > 0;
+                    var isBingbot = navigator.userAgent.toLowerCase().indexOf('bingbot') > 0;
+                    if (isGoogle || isBingbot){
+                        return false;
+                    }
+                }  catch(e){ }
+                if (document.URL.indexOf('/k/') != -1) {
+                    return false;
+                }
+                var now = new Date();
+                var cookieName="tstwelcomeoverlay_"+now.getMonth()+""+now.getDate()+""+now.getYear();
+                if(document.cookie.indexOf(cookieName) == -1) {
+                    var expires = new Date();
+                    expires.setHours(23);
+                    expires.setMinutes(59);
+                    expires.setSeconds(59);
+                    expires = expires.toGMTString();
+                    document.cookie = cookieName + "=" + now + ";expires=" + expires + ";path=/;domain=.thestreet.com";
+                }
+                else{
+                    return false;
+                }
+
+                var sourceUrl =document.URL.toLowerCase();
+                if ((sourceUrl.indexOf("cm_ven=msn")!=-1)||(sourceUrl.indexOf("cm_ven=outbrain")!=-1)||(sourceUrl.indexOf("cm_ven=taboola")!=-1)||(sourceUrl.indexOf("cm_ven=yahoo")!=-1)||(sourceUrl.indexOf("cm_ven=aol")!=-1)||(sourceUrl.indexOf("cm_ven=cnnmoney")!=-1)||(sourceUrl.indexOf("cm_ven=tsmktwatch")!=-1)||(sourceUrl.indexOf("cm_ven=rmmktwatch")!=-1)||(sourceUrl.indexOf("cm_ven=msearthlink")!=-1)||(sourceUrl.indexOf("cm_ven=tscearthlink")!=-1)||(sourceUrl.indexOf("cm_ven=unitedonli")!=-1)||(sourceUrl.indexOf("cm_ven=tradehud")!=-1)||(sourceUrl.indexOf("cm_ven=tsczacks")!=-1) || (sourceUrl.indexOf("cm_ven=msearthlinkcf")!=-1) || (sourceUrl.indexOf("sitescope=true")!=-1) || (sourceUrl.indexOf("cm_ven=tscaolpromo")!=-1) || (sourceUrl.indexOf("cm_ven=msmsnp")!=-1)){
+                    return false;
+                }
+
+                var exclude="aol.com business-news.thestreet.com cnnmoney.com dailyfinance.com earthlink.net jrcads.com juno.com marketing. marketwatch.com money.cnn.com msn.com nasdaq.com netzero.net outbrain.com taboola.com untd.com yahoo.com".split(" ");
+                var override="mail.aol.com mail.yahoo.com msn.mail.com search.yahoo.com webmail.earthlink.net".split(" ");
+
+                TSTWelcomOverlay.showWelcome=true;
+                if( 'referrer' in document ) { // if document has a referrer
+                    var tsc_ref = document.referrer;
+                    try{
+                        tsc_ref = tsc_ref.toLowerCase();
+                    }  catch(e){ }
+
+                    for (i=0;i<exclude.length;i++){
+                        var excludeString=exclude[i];
+                        if (tsc_ref.indexOf(excludeString)!=-1){
+
+                            TSTWelcomOverlay.showWelcome=false;
+                            break;
+                        }
+                    }
+
+                    if (  TSTWelcomOverlay.showWelcome==false){
+                        for (i=0;i<override.length;i++){
+                            overrideString=override[i];
+                            if (tsc_ref.indexOf(overrideString)!=-1){
+                                TSTWelcomOverlay.showWelcome=true;
+                                break;
+                            }
+                        }
+                    }
+
+
+
+                }
+
+                return TSTWelcomOverlay.showWelcome;
+
+            }
+
+            catch(e){ return false;}
+            return false;
+        }
+    };
+
+    if(typeof TSTBrowserCheck == 'undefined' || typeof TSTBrowserCheck.browserMessageShown == 'undefined' || !TSTBrowserCheck.browserMessageShown) {
+        TSTWelcomOverlay.init();
+    }
+
+</script><script type="text/javascript">
+    window.TSTOnReadyFired=false;
+
+
+    function fireTSTOnReady(){
+
+        tstOnreadyDefer.resolve();
+        if ( window.TSTOnReadyFired==false){
+            $(document).trigger({
+                type: "tstOnReady"
+
+            });
+        }
+        window.TSTOnReadyFired=true;
+    }
+
+
+
+    $(document).ready(function() {
+        if (typeof TSTWelcomOverlay != "undefined"){
+
+            if (TSTWelcomOverlay.waitForWelcomeComplete==false && (typeof TSTBrowserCheck == 'undefined' || typeof TSTBrowserCheck.browserMessageShown == 'undefined' || !TSTBrowserCheck.browserMessageShown)){
+                fireTSTOnReady();
+            }
+        }
+        else{
+            if (typeof TSTBrowserCheck == 'undefined' || typeof TSTBrowserCheck.browserMessageShown == 'undefined' || !TSTBrowserCheck.browserMessageShown) {
+               fireTSTOnReady();
+            }
+
+        }
+
+    })
+</script>
+<div id="div-gpt-ad-interstitial-oop" data-type='gpt-ad' class='googleAd placeholder'></div>
+<script  type="text/javascript">
+ TSTInterstitial = {
+
+    decideShow:function() {
+      showInterstitial=false;
+      if( 'referrer' in document ) { // if document has a referrer
+         var tsc_ref = document.referrer;
+         try{
+             tsc_ref = tsc_ref.toLowerCase();
+         }  catch(e){ }
+         if(tsc_ref.indexOf('thestreet.com') != -1) {
+            showInterstitial=true;
+         }
+      }
+      return showInterstitial;
+    },
+
+    writeInterstitialSlot:function(){
+      var forwardSlash="/";
+//      var scriptOopAd   = document.createElement("script");
+//      scriptOopAd.type  = "text/javascript";
+      
+//      scriptOopAd.text += "googletag.cmd.push(function() {googletag.display('div-gpt-ad-interstitial-oop');});";
+//      document.getElementById("div-gpt-ad-interstitial-oop").appendChild(scriptOopAd);
+//      $("#div-gpt-ad-interstitial-oop").append(scriptOopAd);
+        $("#div-gpt-ad-interstitial-oop").removeClass("placeholder");
+    },
+
+    init:function() {
+      if(TSTInterstitial.decideShow()) {
+         TSTInterstitial.writeInterstitialSlot();
+      }
+    }
+ }
+
+ if(typeof TSTBrowserCheck == 'undefined' || typeof TSTBrowserCheck.browserMessageShown == 'undefined' || !TSTBrowserCheck.browserMessageShown) {
+     TSTInterstitial.init();
+  }
+
+</script><a name="results"></a><!-- fix for TimeValueCalculators "#results" anchor tag - url  -->
+<div id="pendingWrapper">
+   <div id="pendingMessage">This account is pending registration confirmation. Please click on the link within the confirmation email previously sent you to complete registration.<br/>
+   <span>Need a new registration confirmation email? Click <a href="#" class="verifyRequest">here</a></span></div>
+</div><!--googleoff: all-->
+<!--googleoff: all-->
+
+<div id="wrapper" class="">
+    <div class="headerWrapper">
+        <div id="TSTheader" class="clearboth">
+            <div class="logo"><a id="TheStreet" href="http://www.thestreet.com/"></a></div>
+
+            <div id="tst_subHdr">
+                <div id="searchDiv">
+                    <div class="searchDiv topicSearch">
+                        <form method="get" action="/find/results/index.html"
+                              name="topicSearchForm">
+                            <input type="text" value="" onfocus="this.value='';tsc_SearchInputBox()"
+                                   name="q" id="topicSearch">
+                            <input type="hidden" value="header" name="omorig">
+                            <button id="topicSearchBtn" type="submit" value="submit"></button>
+                        </form>
+                    </div>
+                    <div class="searchDiv quoteSearch">
+                        <input id="quoteSearch" type="text" value=""/>
+                        <button id="quoteSearchBtn" type="input"></button>
+                        <div id="quoteContainer"></div>
+                    </div>
+                </div>
+            </div><!-- end of subHdr -->
+        </div>
+
+        <div class="tstnavWrapper">
+
+    <div id="tst_nav">
+        <div id="navPromo">
+            <div  data-type="gpt-ad" class="googleAd "
+              id="div-gpt-ad-navpromo">
+        </div>
+    </div>
+        <ul class="tst_topnav">
+                <li id="home" class="liTop">
+                    <a class="open" href="http://www.thestreet.com?cm_ven_int=navhome">Home</a>
+                                </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="cramer" class="liTop">
+                    <a class="open" href="http://www.thestreet.com/topic/45801/daily-booyah.html?cm_ven_int=navcramer">Cramer</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://www.thestreet.com/k/aap/_tscnav/index.html?cm_ven_int=subnavcramer">Cramer's Portfolio</a>
+                                        </li>
+                            <li>
+                                    <a href="http://realmoney.thestreet.com/authors/jim-cramer?cm_ven_int=subnavcramer">Cramer's Blog</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/author/269/JimCramer/videos.html?cm_ven_int=subnavcramer">Cramer's Videos</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/author/269/JimCramer/articles.html?cm_ven_int=subnavcramer">Cramer's Articles</a>
+                                        </li>
+                            <li>
+                                    <a target="new" href="https://secure2.thestreet.com/cap/prm.do?OID=021951&cm_ven_int=subnavcramer" data-link-name="top navigation" data-link-order="4" data-link-type="co-registration" data-oid="021951">Cramer's 25 Investing Rules</a>
+                                        </li>
+                            <li>
+                                    <a target="new" href="https://secure2.thestreet.com/cap/prm.do?OID=021952&cm_ven_int=subnavcramer" data-link-name="top navigation" data-link-order="5" data-link-type="co-registration" data-oid="021952">Cramer's 10 Commandments</a>
+                                        </li>
+                            <li>
+                                    <a target="new" href="https://secure2.thestreet.com/cap/prm.do?OID=024913&cm_ven_int=subnavcramer" data-link-name="top navigation" data-link-order="6" data-link-type="co-registration" data-oid="024913">Cramer's Best Stocks of 2015</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/story/madmoneywrap.html?cm_ven_int=subnavcramer">Mad Money Recap</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/mad-money/index.html?cm_ven_int=subnavcramer">Mad Money Stock Screener</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="actionalertsplus" class="liTop">
+                    <a class="open" href="http://www.thestreet.com/k/aap/_tscnav/index.html?cm_ven_int=navaap">Action Alerts PLUS</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://www.thestreet.com/k/aap/_tscnav/portfolio.html?cm_ven_int=subnavaap">Charitable Trust Portfolio</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/k/aap/_tscnav/index.html?cm_ven_int=subnavaap">Most Recent Trade Alert</a>
+                                        </li>
+                            <li>
+                                    <a target="new" href="https://secure2.thestreet.com/cap/prm.do?OID=021951&cm_ven_int=subnavaap" data-link-name="top navigation" data-link-order="2" data-link-type="co-registration" data-oid="021951">25 Investing Rules</a>
+                                        </li>
+                            <li>
+                                    <a target="new" href="https://secure2.thestreet.com/cap/prm.do?OID=021952&cm_ven_int=subnavaap" data-link-name="top navigation" data-link-order="3" data-link-type="co-registration" data-oid="021952">10 Trading Commandments</a>
+                                        </li>
+                            <li>
+                                    <a target="new" href="https://secure2.thestreet.com/cap/prm.do?OID=024913&cm_ven_int=subnavaap" data-link-name="top navigation" data-link-order="4" data-link-type="co-registration" data-oid="024913">Cramer's Best Stocks for 2015</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="realmoney" class="liTop">
+                    <a class="open" href="http://realmoney.thestreet.com/?cm_ven_int=navrealmoney">Real Money</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://realmoney.thestreet.com/authors/jim-cramer?cm_ven_int=subnavrealmoney">Jim Cramer's Blog</a>
+                                        </li>
+                            <li>
+                                    <a href="http://realmoney.thestreet.com/authors?cm_ven_int=subnavrealmoney">Financial Experts</a>
+                                        </li>
+                            <li>
+                                    <a href="http://realmoney.thestreet.com/today?cm_ven_int=subnavrealmoney">Research and Commentary</a>
+                                        </li>
+                            <li>
+                                    <a href="http://realmoney.thestreet.com/tags/technical-analysis?cm_ven_int=subnavrealmoney">Technical Analysis Ideas</a>
+                                        </li>
+                            <li>
+                                    <a href="http://realmoney.thestreet.com/updates-and-conversations?cm_ven_int=subnavrealmoney">Columnist Conversations</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/47661/real-money-free-preview.html?cm_ven_int=subnavrealmoney">FREE Previews</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="markets" class="liTop">
+                    <a class="open" href="http://www.thestreet.com/markets/index.html?cm_ven_int=navmarkets">Markets</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/47781/stock-market-today.html?cm_ven_int=subnavmarkets">Stock Market Today</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/1563/forex.html?cm_ven_int=subnavmarkets">FOREX Rates</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/47782/commodity-market-news.html?cm_ven_int=subnavmarkets">Commodity Prices</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/43441/gold-price.html?cm_ven_int=subnavmarkets">Gold Prices Today</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/headlines-and-perspectives/analyst-upgrades-downgrades/index.html?cm_ven_int=subnavmarkets">Analyst Up/Downgrades</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/event-calendar/index.html?tab=economic_events&cm_ven_int=subnavmarkets">Economic Events Calendar</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="news" class="liTop">
+                    <a class="open" href="http://www.thestreet.com/topic/47801/business-news-today.html?cm_ven_int=navnews">News</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://www.thestreet.com/now/index.html?cm_ven_int=subnavnews">Latest News</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/headlines-and-perspectives/biotech/index.html?cm_ven_int=subnavnews">Biotech and Drugs</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/47561/technology-news.html?cm_ven_int=subnavnews">Technology News</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/headlines-and-perspectives/financial-services/index.html?cm_ven_int=subnavnews">Banking and Finance</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/life-and-money/small-business/index.html?cm_ven_int=subnavnews">Small Business News</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="investing" class="liTop">
+                    <a class="open" href="http://www.thestreet.com/investment-research/index.html?cm_ven_int=navresearch">Investing</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://www.thestreet.com/r/ratings/reports/ir-screener.html?cm_ven_int=subnavinvesting">Stock Screener</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/stock-market-news/10579592/top-rated-stocks/top-rated-stocks.html?cm_ven_int=subnavinvesting">Best Stocks for 2015</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/stock-market-news/10571219/top-rated-mutual-funds/top-rated-mutual-funds.html?cm_ven_int=subnavinvesting">Best Funds for 2015</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/stock-market-news/10575864/top-rated-etfs/top-rated-etfs.html?cm_ven_int=subnavinvesting">Best ETFs for 2015</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/45661/income-investing.html?cm_ven_int=subnavinvesting">Dividends and Income</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/46001/financial-glossary.html?cm_ven_int=subnavinvesting">Financial Dictionary</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/47701/how-to-invest-in-stocks.html?cm_ven_int=subnavinvesting">Investing in Stocks</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/45201/bond-investing-101.html?cm_ven_int=subnavinvesting">Investing in Bonds</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/life-and-money/mutual-fund-center/index.html?cm_ven_int=subnavinvesting">Investing in Mutual Funds</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/life-and-money/etf-center/index.html?cm_ven_int=subnavinvesting">Investing in ETFs</a>
+                                        </li>
+                            <li>
+                                    <a href="http://secure2.thestreet.com/cap/prm.do?OID=025863&cm_ven_int=subnavinvesting">Investing in Options</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="trading" class="liTop">
+                    <a class="open" href="http://www.thestreet.com/topic/47501/stock-picks.html?cm_ven_int=navtrading">Trading</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://www.thestreet.com/online-trading/compare-best-online-brokers.html?cm_ven_int=subnavtrading">Best Online Brokerage</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/headlines-and-perspectives/analyst-upgrades-downgrades/index.html?cm_ven_int=subnavtrading">Stock Upgrades</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/47422/technical-analysis.html?cm_ven_int=subnavtrading">Technical Analysis</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/thestreet-picks/stock-options/index.html?cm_ven_int=subnavtrading">Option Trading Strategies</a>
+                                        </li>
+                            <li>
+                                    <a href="http://secure2.thestreet.com/cap/prm.do?OID=025863&cm_ven_int=subnavtrading">Options Trading Basics</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="money" class="liTop">
+                    <a class="open" href="http://www.thestreet.com/topic/47761/personal-finance.html?cm_ven_int=navmoney">Money</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/47441/retirement-center.html?cm_ven_int=subnavmoney">Retirement (IRAs, 401ks)</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/life-and-money/mortgages/index.html?cm_ven_int=subnavmoney">Real Estate</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/headlines-and-perspectives/leisure/index.html?cm_ven_int=subnavmoney">Travel - Leisure</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/topic/47881/running-a-business.html?cm_ven_int=subnavmoney">Running a Business</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/bank-safety/index.html?cm_ven_int=subnavmoney">Bank Safety Ratings</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/insurers/index.html?cm_ven_int=subnavmoney">Insurer Safety Ratings</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/stock-market-news/12458202/individual-tax-calendar-2015.html?cm_ven_int=subnavmoney">Individual Tax Calendar 2015</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="financialadvisors" class="liTop">
+                    <a class="open" href="http://www.thestreet.com/financial-advisor-forum/index.html?cm_ven_int=navfinancialadvisors">Financial Advisors</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://www.thestreet.com/financial-advisor-forum/index.html?cm_ven_int=subnavfinancialadvisors">Financial Advisor Forum</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav">
+                <li id="video" class="liTop">
+                    <a class="open" href="http://www.thestreet.com/video/index.html?cm_ven_int=navvideos">Video</a>
+                                <ul class="drop">
+                            <li>
+                                    <a href="http://www.thestreet.com/video/index.html?cm_ven_int=subnavvideos">TheStreet TV</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/video/channel/cramer-on-demand.html?cm_ven_int=subnavvideos">Cramer on Demand</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/video/channel/market-updates.html?cm_ven_int=subnavvideos">Market Updates</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/video/channel/options.html?cm_ven_int=subnavvideos">Options</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/video/channel/economics-and-politics.html?cm_ven_int=subnavvideos">Economics & Politics</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/video/channel/tech-bites.html?cm_ven_int=subnavvideos">Technology</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/video/channel/small-business.html?cm_ven_int=subnavvideos">Small Business</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/video/channel/ceo-interviews.html?cm_ven_int=subnavvideos">CEO Interviews</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/video/channel/features.html?cm_ven_int=subnavvideos">Features</a>
+                                        </li>
+                            <li>
+                                    <a href="http://www.thestreet.com/video/sitemap.html?cm_ven_int=subnavvideos">Video Archive</a>
+                                        </li>
+                            </ul>
+                   </li>
+           </ul>
+           <ul class="tst_topnav premiumMenu">
+                    <li id="servicesLink" class="liTop"><a class="open" onclick="return false">Subscribe<span class="preIcon"></span></a>
+                        <ul class="pepDrop">
+                            <div id="switchToDiv">
+                                <div class="leftSwitch">
+                                    <h3>SUBSCRIPTION SERVICES:</h3>
+                                    <ul class="leftPrem">
+                                        <li><a href="http://www.thestreet.com/k/aap/_tscnav/index.html">Action Alerts PLUS</a></li>
+                                        <li><a href="http://www.thestreet.com/k/aao/_tscnav/index.html">Action Alerts OPTIONS</a></li>
+                                        <li><a href="http://www.thestreet.com/k/dst/_tscnav/index.html">Daily Swing Trade</a></li>
+                                        <li><a href="http://www.thestreet.com/k/dsa/_tscnav/index.html">Dividend Stock Advisor</a></li>
+                                        <li><a href="http://www.thestreet.com/k/bos/_tscnav/index.html">Growth Seeker</a></li>
+                                        <li><a href="http://www.thestreet.com/options-profits/_tscnav/index.html">Options Profits</a></li>
+                                    </ul>
+                                    <ul class="rightPrem">
+                                        <li><a href="http://www.thestreet.com/k/qr/_tscnav/index.html">Quant Ratings</a></li>
+                                        <li><a href="http://realmoney.thestreet.com">Real Money</a></li>
+                                        <li><a href="http://realmoneypro.thestreet.com">Real Money Pro</a></li>
+                                        <li><a href="http://www.thestreet.com/k/su/_tscnav/index.html">Stocks Under $10</a></li>
+                                        <li><a href="http://www.thestreet.com/k/ts/_tscnav/index.html">Top Stocks</a></li>
+                                        <li><a href="http://www.thestreet.com/k/tf/_tscnav/index.html">Trifecta Stocks</a></li>
+                                    </ul>
+                                    <a id="compareLink" href="http://www.thestreet.com/staticFull/special-offers.html?cm_ven_int=hpservicestab"><span>Compare All Subscription Services</span> <span class="arrowIcon"></span></a>
+
+                                </div>
+                                <div class="rightSwitch">
+                                    <h3>SUBSCRIPTION BUNDLES:</h3>
+                                    <ul>
+                                        <li><a href="http://www.thestreet.com/k/pp/_newlogin/">Portfolio PLUS</a></li>
+                                        <li><a style="paddiing-right: 0;" href="http://www.thestreet.com/k/rmpp/_newlogin/">Real Money Pro Portfolio</a></li>
+                                        <li><a href="http://www.thestreet.com/k/ch/_newlogin/">Chairman's Club</a></li>
+                                    </ul>
+                                    <h3>FREE:</h3>
+                                    <ul>
+                                        <li><a href="http://www.thestreet.com">TheStreet</a></li>
+                                        <li><a href="http://www.mainstreet.com" target="_blank">MainStreet</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+
+
+                    </li>
+               </ul>
+
+        </div><!-- end of tst_nav -->
+    </div>
+
+<div id="hotWrapper">
+     <div id="taxonomy_subnav">
+        <ul id="subnav_home">
+                <li><div class="subnavPlaintext">Hot Topics:</div>
+                            </li>
+                <li><a  href="http://www.thestreet.com/story/13222296/1/google-starts-to-pay-attention-to-shareholders--is-a-dividend-next.html?kval=dontmiss">Google</a>
+                                    </li>
+                <li><a  href="http://www.thestreet.com/story/13222445/1/paypal-spinoff-day-is-here--what-does-it-mean-for-investors.html?kval=dontmiss">PayPal</a>
+                                    </li>
+                <li><a  href="http://www.thestreet.com/story/13222015/1/5-health-care-stocks-ready-for-breakouts.html?kval=dontmiss">Health Care Stocks</a>
+                                    </li>
+                <li><a  href="http://secure2.thestreet.com/cap/prm.do?OID=030204">Cramer's Mid-Year Forecast</a>
+                                    </li>
+                <li><a  href="http://secure2.thestreet.com/cap/prm.do?OID=028343">Top Dividend Stocks</a>
+                                    </li>
+                <li><a  href="http://secure2.thestreet.com/cap/prm.do?OID=028344">10 Best ETFs</a>
+                                    </li>
+                <li><a  href="https://secure2.thestreet.com/cap/prm.do?OID=024913">Cramer's Best Stocks for 2015</a>
+                                    </li>
+                <li><a  href="http://secure2.thestreet.com/cap/prm.do?OID=028531">Best High-Yielders</a>
+                                    </li>
+                <li>&nbsp;</li>
+        </ul>
+        </div>
+</div><!-- end of hotWrapper -->
+
+<script type="text/javascript">
+    if (location.pathname=='/now/index.html'){
+        $('#businessnews','active');
+    }
+</script></div><!-- end of headerWrapper -->
+</div>
+<div title="hostname" class="textHide" style="display:none;">ip-192-168-72-248</div>
+<!--googleon: all--><!--googleon: all-->
+
+<div id="doc2" class="yui-t7">
+
+    <div id="expanderAd" class="robots-nocontent" >
+            <div  data-type="gpt-ad" class="googleAd "
+              id="div-gpt-ad-expander">
+        </div>
+    </div>
+    <div class="setWidth">
+        <div id="bd" class="clearboth">
+
+
+      <div class="ratingsHeader">
+    <div id='logo_ct'><img src="http://s.thestreet.com/files/tsc/v2008/css/images/ratings/ratings_logo_beta.gif"/></div><br/>
+        <ul id="marketNav" style="margin:0 0 -11px; background-color:#FFFFFF !important; list-style: none !important; width: 605px;">
+            <li class=""><a href="/r/ratings/index.html">Research Center</a></li>
+            <li class="selected"><a href="/r/ratings/reports/screener.html">Reports</a></li>
+            <li class=""><a href="/r/ratings/upgradesanddowngrades/index.html">Stock Upgrades &amp; Downgrades</a></li>
+        </ul>
+    </div>
+
+
+
+<div id="content">
+        <div id="data" class="yui-skin-tsc ">
+
+               <div id="coName">
+                    <div id="ratingsHead">Scorpio Tankers Inc</div>
+                        STNG : NYSE : Services<br/>
+                        <div id="ratingButton"><a href="/r/ratings/reports/screener.html">Find Ratings Reports</a></div>
+                    </div>
+                <div id="topTradeInfo">
+                        <div id="tradeInfo">
+                            <span id="price-tabs">$11.29</span>
+                            <span class="value-tabs"> | %</span>
+                        </div>
+                        <div id="range">
+                            <span>Today's Range:</span>
+                            <span>10.97</span> -
+                            <span>11.34</span>
+                            </div>
+                        <div class="volume">
+                            <span>Avg. Daily Volume:</span>
+                                <span>2451800.0</span>
+                            </div>
+                        <div class="volume">
+                            <span>07/17/15 - 4:07 PM ET</span>
+                        </div>
+                        </div>
+                <div id="marketTabMenu">
+    <ul id="Tabs">
+       <li class="selected"><a href="/r/ratings/reports/summary/STNG.html">Rating Summary</a></li>
+       <li class=""><a href="/r/ratings/reports/detail/STNG.html">Rating Detail</a></li>
+       <li class=""><a href="/r/ratings/reports/analysis/STNG.html">Financial Analysis</a></li>
+       <li class=""><a href="/r/ratings/reports/peergroup/STNG.html">Peer Group</a></li>
+    </ul>
+</div>
+<div id="dataBox">
+                  <div id="quote-tabs">
+            <div id="col1">
+                <ul class="tabContent">
+                    <li><span style="font-weight:bold;">Last Ratings Update:</span><span class="value" style="font-weight:bold;width:100px;">07/09/2015</span> </li>
+                    <li><span>Price as of 07/09/2015:</span><span class="value" style="width:100px;">$10.18</span> </li>
+                    <li><span>Price Target:</span>
+                        <span class="value" style="width:100px;">
+                        
+                                n/a
+                            </span> </li>
+
+                    <li><span>Market Capitalization:</span><span class="value" style="width:100px;">
+                        1.8B
+                            </span> </li>
+
+                    <li><span>Avg. Daily Volume</span>
+                        <span class="volume" style="width:100px;">
+                            2,451,800</span>
+                    </li>
+                    </ul>
+            </div>
+            <div id="col1">
+                <ul class="tabContent">
+                    <li><span>&nbsp;</span><span class="value" style="width:100px;">&nbsp;</span> </li>
+                    <li><span>Beta:</span><span class="value" style="width:100px;">1.89</span> </li>
+                    <li><span>Dividend Rate:</span><span class="value" style="width:100px;">$0.48</span> </li>
+                    <li><span>Dividend Yield</span><span class="value" style="width:100px;">4.71%</span> </li>
+                    <li><span style="font-weight:bolder;">Recommendation:</span><span class="value" style="font-weight:bolder;width:100px;">C+(Hold)</span> </li>                    
+                </ul>
+            </div>
+        </div>
+        <div id="ratingGraph">
+            <img width="575" src="http://ratings.thestreet.com/tools/inc/charts/STNG_pvr.png" alt="STNG Price-Volume-Ratings Chart"/>
+        </div>
+    </div>
+
+
+               <div id="premServ" style="margin-left: -5px;">
+                    <div id="ftrMktgSixPack">
+
+    <div id="ftrLineTop">
+        <h3>Select the service that is right for you!</h3>
+        <a href="http://www.thestreet.com/staticFull/special-offers.html?cm_ven_int=footer">COMPARE ALL
+            SERVICES</a>
+    </div>
+
+    <div class="ftrLineOne">
+
+        <div class="ftrPlaceOne">
+            <h5><a href="https://secure2.thestreet.com/cap/prm.do?OID=019237" id="tst-ratingsreports-aap-019237" target="_blank" data-link-order="1"
+                   
+                        data-link-name="below summary content"
+                    
+                   data-link-type="product-signup" data-oid="019237" data-product-name="Action Alerts PLUS">Action Alerts PLUS</a></h5>
+            <a href="https://secure2.thestreet.com/cap/prm.do?OID=019237" id="tst-ratingsreports-aap-019237" class="ftrButton" target="_blank" data-link-order="2"
+                    
+                        data-link-name="below summary content"
+                    
+               data-link-type="product-signup" data-oid="019237" data-product-name="Action Alerts PLUS">Try it NOW</a>
+
+            <p>Portfolio Manager Jim Cramer and Director of Research Jack Mohr reveal their investment tactics while giving advanced notice before every trade.</p>
+            <h6>Product Features:</h6>
+            <ul>
+                <li>$2.5+ million portfolio</li>
+                <li>Large-cap and dividend focus</li>
+                <li>Intraday trade alerts from Cramer</li>
+                <li>Weekly roundups</li>
+            </ul>
+        </div>
+        <div class="ftrPlaceTwo">
+            <h5><a href="https://secure2.thestreet.com/cap/prm.do?OID=022736" id="tst-ratingsreports-qr-022736" target="_blank" data-link-order="3"
+                    
+                        data-link-name="below summary content"
+                    
+                   data-link-type="product-signup" data-oid="022736" data-product-name="TheStreet Quant Ratings">TheStreet Quant Ratings</a></h5>
+            <a href="https://secure2.thestreet.com/cap/prm.do?OID=022736" id="tst-ratingsreports-qr-022736" class="ftrButton" target="_blank" data-link-order="4"
+                    
+                        data-link-name="below summary content"
+                    
+               data-link-type="product-signup" data-oid="022736" data-product-name="TheStreet Quant Ratings">Try it NOW</a>
+            <h6 style="margin:12px 0 4px 42px;font-size:12px !important;"><a
+                    href="https://secure2.thestreet.com/cap/prm.do?OID=022736" id="tst-ratingsreports-qr-022736" target="_blank" data-link-order="5"
+                    
+                        data-link-name="below summary content"
+                    
+                    data-link-type="product-signup" data-oid="022736" data-product-name="TheStreet Quant Ratings" style="color:#ed4c19; font-size:12px !important;">Only $49.95/yr</a></h6>
+
+            <p style="margin-top:0px !important;">Access the tool that DOMINATES the Russell 2000 and the S&amp;P
+                500.</p>
+            <h6>Product Features:</h6>
+            <ul>
+                <li>Buy, hold, or sell recommendations for over 4,300 stocks</li>
+                <li>Unlimited research reports on your favorite stocks</li>
+                <li>A custom stock screener</li>
+                <li>Upgrade/downgrade alerts</li>
+            </ul>
+
+        </div>
+        <div class="ftrPlaceThree">
+            <h5><a href="https://secure2.thestreet.com/cap/prm.do?OID=015153" id="tst-ratingsreports-su-015153" target="_blank" data-link-order="6"
+                    
+                        data-link-name="below summary content"
+                    
+                   data-link-type="product-signup" data-oid="015153" data-product-name="Stocks Under $10">Stocks Under $10</a></h5>
+            <a href="https://secure2.thestreet.com/cap/prm.do?OID=015153" id="tst-ratingsreports-su-015153" class="ftrButton" target="_blank" data-link-order="7"
+                    
+                        data-link-name="below summary content"
+                    
+               data-link-type="product-signup" data-oid="015153" data-product-name="Stocks Under $10">Try it NOW</a>
+
+            <p>David Peltier uncovers low dollar stocks with serious upside potential that are flying under Wall Street's radar.</p>
+            <h6>Product Features:</h6>
+            <ul>
+                <li>Model portfolio</li>
+                <li>Stocks trading below $10</li>
+                <li>Intraday trade alerts</li>
+                <li>Weekly roundups</li>
+            </ul>
+        </div>
+        </div>
+    <div class="ftrLineTwo">
+
+        <div class="ftrPlaceOne">
+            <h5><a href="https://secure2.thestreet.com/cap/prm.do?OID=021548" id="tst-ratingsreports-dsa-021548" target="_blank" data-link-order="8"
+                    
+                        data-link-name="below summary content"
+                    
+                   data-link-type="product-signup" data-oid="021548" data-product-name="Dividend Stock Advisor">Dividend Stock Advisor</a></h5>
+            <a href="https://secure2.thestreet.com/cap/prm.do?OID=021548" id="tst-ratingsreports-dsa-021548" class="ftrButton" target="_blank" data-link-order="9"
+                    
+                        data-link-name="below summary content"
+                    
+               data-link-type="product-signup" data-oid="021548" data-product-name="Dividend Stock Advisor">Try it NOW</a>
+
+            <p>David Peltier identifies the best of breed dividend stocks that will pay a reliable AND significant income stream.</p>
+            <h6>Product Features:</h6>
+            <ul>
+                <li>Diversified model portfolio of dividend stocks</li>
+                <li>Alerts when market news affect the portfolio</li>
+                <li>Bi-weekly updates with exact steps to take - BUY, HOLD, SELL</li>
+            </ul>
+        </div>
+        <div class="ftrPlaceTwo">
+            <h5><a href="https://secure2.thestreet.com/cap/prm.do?OID=019800" id="tst-ratingsreports-rmp-019800" target="_blank" data-link-order="10"
+                    
+                        data-link-name="below summary content"
+                    
+                   data-link-type="product-signup" data-oid="019800" data-product-name="Real Money Pro">Real Money Pro</a></h5>
+            <a href="https://secure2.thestreet.com/cap/prm.do?OID=019800" id="tst-ratingsreports-rmp-019800" class="ftrButton" target="_blank" data-link-order="11"
+                    
+                        data-link-name="below summary content"
+                    
+               data-link-type="product-signup" data-oid="019800" data-product-name="Real Money Pro">Try it NOW</a>
+
+            <p>All of <i>Real Money</i>, plus 15 more of Wall Street's sharpest minds delivering actionable trading ideas, a
+                comprehensive look at the market, and fundamental and technical analysis.</p>
+            <h6>Product Features:</h6>
+            <ul>
+                <li><i>Real Money</i> + Doug Kass Plus 15 more Wall Street Pros</li>
+                <li>Intraday commentary & news</li>
+                <li>Ultra-actionable trading ideas</li>
+            </ul>
+        </div>
+        <div class="ftrPlaceThree">
+            <h5><a href="https://secure2.thestreet.com/cap/prm.do?OID=015144" id="tst-ratingsreports-op-015144" target="_blank" data-link-order="12"
+                    
+                        data-link-name="below summary content"
+                    
+                   data-link-type="product-signup" data-oid="015144" data-product-name="Options Profits">Options Profits</a></h5>
+            <a href="https://secure2.thestreet.com/cap/prm.do?OID=015144" id="tst-ratingsreports-op-015144" class="ftrButton" target="_blank" data-link-order="13"
+                    
+                        data-link-name="below summary content"
+                    
+               data-link-type="product-signup" data-oid="015144" data-product-name="Options Profits">Try it NOW</a>
+
+            <p>Our options trading pros provide daily market commentary and over 100 monthly option trading ideas and
+                strategies to help you become a well-seasoned trader.</p>
+            <h6>Product Features:</h6>
+            <ul>
+                <li>100+ monthly options trading ideas</li>
+                <li>Actionable options commentary & news</li>
+                <li>Real-time trading community</li>
+                <li>Options TV</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+                </div>
+
+            <div id="rightRail">
+    <div style="margin-left: 5px;">
+        <div id="marketDataBoxAd">
+    <div  data-type="gpt-ad" class="googleAd "
+              id="div-gpt-ad-marketdata">
+        </div>
+    </div>
+</div>
+
+    <div class="dataSection rightSection" id="latest">
+        <h3>Latest Stock Upgrades/Downgrades</h3>
+        <div class="yui-skin-sam">
+           <div id="latest_upgrades_downgrades_dt"></div>
+        </div>
+        <div>
+           <a href="/r/ratings/upgradesanddowngrades/index.html">View more upgrades/downgrades >> </a>
+           <div id="rr_ratguide">
+              <img src="http://s.thestreet.com/files/tsc/v2008/css/images/ratings/ratingguide.png"/>
+        </div>
+        </div>
+    </div><!-- end of dataSection -->
+    <!--googleoff: all-->
+
+    <div id="boxAdContainer" style="text-align:center;">
+        <div  data-type="gpt-ad" class="googleAd "
+              id="div-gpt-ad-box">
+        </div>
+    </div>
+
+    <!--googleon: all-->
+
+</div><!-- end of rightRail -->
+
+<br class="clearBoth" />
+
+         </div>
+\t
+      <!-- reporting leave at top --><span style="display:inline !important;width:1px !important;line-height:0px !important;float:left !important;height:1px !important;margin:0px !important;padding:0px !important"><script  language="JavaScript" type="text/javascript" src="http://i.thestreet-static.com/files/tsc/v2008/js/_1437083940100/min/reporting.js"></script></span>
+
+<script type="text/javascript" src="http://i.thestreet-static.com/files/tsc/v2008/js/_1437083940100/min/combined-bottom.js"></script>
+      </div>
+    </div>
+</div>
+
+<div id="tst_footer">
+    <div id="links-wrapper">
+        <div id="column_1" class="column-common">
+                <ul class="footerLinks">
+                    <li id="1308494" class="column-head">
+                        About TheStreet</li>
+                    <ul class="footerLink">
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://corporate.thestreet.com/">About Us</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://contributor.thestreet.com/users/register">Write For TheStreet</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://investor-relations.thestreet.com/">Investor Relations</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/tsc/onlinekit/index.html">Advertise</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://corporate.thestreet.com/reprints">Reprints</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/selfserve/SSMainMenu.jsp?site=tsc&url=http://www.thestreet.com/index.html">Customer Service</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://corporate.thestreet.com/employment">Employment</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://corporate.thestreet.com/privacy">Privacy Policy</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://corporate.thestreet.com/terms">Terms of Use</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/archive/a.html">Topic Archive</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/video/sitemap.html">Video Sitemap</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/staticFull/data-providers.html">Data</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/staticFull/affiliates.html">Affiliate</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://pressroom.thestreet.com/press-home.cfm">Press Room</a>
+                                    </li>
+                        </ul>
+                </ul>
+            </div>
+        <div id="column_2" class="column-common">
+                <ul class="footerLinks">
+                    <li id="1308495" class="column-head">
+                        Subscriptions</li>
+                    <ul class="footerLink">
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=021801" data-link-name="bottom footer" data-link-order="0" data-link-type="product-signup" data-oid="021801" data-product-name="Action Alerts PLUS">Action Alerts PLUS</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=025192" data-link-name="bottom footer" data-link-order="1" data-link-type="product-signup" data-oid="025192" data-product-name="Action Alerts OPTIONS">Action Alerts OPTIONS</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=029434" data-link-name="bottom footer" data-link-order="2" data-link-type="product-signup" data-oid="029434" data-product-name="Daily Swing Trade">Daily Swing Trade</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=021804" data-link-name="bottom footer" data-link-order="3" data-link-type="product-signup" data-oid="021804" data-product-name="Dividend Stock Advisor">Dividend Stock Advisor</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=021803" data-link-name="bottom footer" data-link-order="4" data-link-type="product-signup" data-oid="021803" data-product-name="Growth Seeker">Growth Seeker</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=021807" data-link-name="bottom footer" data-link-order="5" data-link-type="product-signup" data-oid="021807" data-product-name="Options Profits">Options Profits</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=023024" data-link-name="bottom footer" data-link-order="6" data-link-type="product-signup" data-oid="023024" data-product-name="Quant Ratings">Quant Ratings</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=021805" data-link-name="bottom footer" data-link-order="7" data-link-type="product-signup" data-oid="021805" data-product-name="Real Money">Real Money</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=021806" data-link-name="bottom footer" data-link-order="8" data-link-type="product-signup" data-oid="021806" data-product-name="Real Money Pro">Real Money Pro</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=021802" data-link-name="bottom footer" data-link-order="9" data-link-type="product-signup" data-oid="021802" data-product-name="Stocks Under $10">Stocks Under $10</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=029433" data-link-name="bottom footer" data-link-order="10" data-link-type="product-signup" data-oid="029433" data-product-name="Top Stocks">Top Stocks</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=029432" data-link-name="bottom footer" data-link-order="11" data-link-type="product-signup" data-oid="029432" data-product-name="Trifecta Stocks">Trifecta Stocks</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=021808" data-link-name="bottom footer" data-link-order="12" data-link-type="product-signup" data-oid="021808" data-product-name="Portfolio PLUS">Portfolio PLUS</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=025907" data-link-name="bottom footer" data-link-order="13" data-link-type="product-signup" data-oid="025907" data-product-name="RMP Portfolio">RMP Portfolio</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://secure2.thestreet.com/cap/prm.do?OID=021809" data-link-name="bottom footer" data-link-order="14" data-link-type="product-signup" data-oid="021809" data-product-name="Chairman's Club">Chairman's Club</a>
+                                    </li>
+                        </ul>
+                </ul>
+            </div>
+        <div id="column_3" class="column-common">
+                <ul class="footerLinks">
+                    <li id="1308496" class="column-head">
+                        Featured Topics</li>
+                    <ul class="footerLink">
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/author/269/JimCramer/all.html">Jim Cramer</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/mad-money/index.html">Mad Money</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/47781/stock-market-today.html">Stock Market Today</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/%5EDJI.html">Dow Jones Today</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/45661/income-investing.html">Dividend Stocks</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/43441/gold-price.html">Gold Price</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/44141/silver.html">Silver Prices</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/45621/copper-price.html">Copper Prices</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/45741/oil-prices.html">Oil Prices</a>
+                                    </li>
+                        </ul>
+                </ul>
+            </div>
+        <div id="column_4" class="column-common">
+                <ul class="footerLinks">
+                    <li id="1308497" class="column-head">
+                        Popular Pages</li>
+                    <ul class="footerLink">
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/47501/stock-picks.html">Best Stocks for 2015</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/45162/best-stocks-to-buy-now.html">Best Stocks to Buy</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/45162/best-stocks-to-buy-now.html">Stocks to Buy Now</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/dividends/leaders/index.html">High Dividend Stocks</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/stock-market-news/11771386/market-holidays-2013.html">Stock Market Holidays</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/event-calendar/index.html">Earnings Calendar</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/dividends/index.html">Ex Dividend Date</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/19281/top-oppenheimer-funds.html">Oppenheimer Funds</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/topic/1258/best-vanguard-funds.html">Vanguard Funds</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/online-trading/compare-best-online-brokers.html">Best Online Brokers</a>
+                                    </li>
+                        </ul>
+                </ul>
+            </div>
+        <div id="column_5" class="column-common">
+                <ul class="footerLinks">
+                    <li id="1308498" class="column-head">
+                        Popular Symbols</li>
+                    <ul class="footerLink">
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/aapl.html">AAPL</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/fb.html">FB</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/tsla.html">TSLA</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/baba.html">BABA</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/goog.html">GOOG</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/twtr.html">TWTR</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/vz.html">VZ</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/bac.html">BAC</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/bidu.html">BIDU</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/gld.html">GLD</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/quote/slv.html">SLV</a>
+                                    </li>
+                        </ul>
+                </ul>
+            </div>
+        <div id="column_6" class="column-common">
+                <ul class="footerLinks">
+                    <li id="1308499" class="column-head">
+                        Follow theStreet</li>
+                    <ul class="footerLink">
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://twitter.com/TheStreet">Twitter</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://www.facebook.com/TheStreet">Facebook</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="https://plus.google.com/+TheStreet">Google+</a>
+                                    </li>
+                        <li class="subcolumn-head">
+                                <a target="new" class="noLine" href="http://www.thestreet.com/static/rss.html">RSS</a>
+                                    </li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+    <div id="idc">
+        <div id="footer-wrapper">
+            <div id="idcLogo"><!-- possibly to come --></div>
+            <div>
+                <a id="footerLogo" href="http://www.thestreet.com"></a>
+                <div style="margin: 10px 0 3px;">&#169; 1996-2015 TheStreet, Inc. All rights reserved.</div>
+                <div><a target="_blank" href="http://nytm.org/made-in-nyc" class="noLine">Made in NYC</a></div>
+                <div><a id="mobileVersion" href="#" class="noLine">Mobile Version</a></div>
+            </div>
+        </div>
+    </div>
+</div><!-- end of tst_footer -->
+
+<script type="text/javascript">
+    $(function(){
+
+        $('#mobileVersion').click(function(){
+            document.cookie = "decorator=; mtracker=somevalue; expires=0; path=/";
+            window.location.reload();
+        });
+
+    });
+</script>
+
+ <!--googleon: all-->
+
+
+
+
+<div id="topElements">
+    <div id="loginLinks">
+ <div class="loginLinks">
+   <a href="javascript:void(0);" id="login" rel="nofollow"></a>
+   <a href="https://secure2.thestreet.com/cap/selfserve/SSMainMenu.jsp?site=tsc&amp;url=http://www.thestreet.com/index.html" rel="nofollow"><span id="account">Your Account</span><span class="accountIcon"></span></a>
+     <a rel="nofollow" id="alerts" class="followExt" href="http://www.thestreet.com/alerts/">Follow</a> <span id="followIcon">
+
+     <div id="shareDiv">
+         <div class="shareArrow">&nbsp;</div>
+         <div class="shareDiv">
+             <div class="alertDiv">
+                 <a id="alerts" class="tstAlert" href="http://www.thestreet.com/alerts/" ><span> </span>TheStreet Alerts</a>
+             </div>
+             <div class="tstSocial">
+                 <a href="http://www.facebook.com/TheStreet" target="_blank" class="fbIcon" title="Follow TheStreet on Facebook"></a>
+                 <a href="http://www.twitter.com/TheStreet" target="_blank" class="ttIcon" title="Follow TheStreet on Twitter"></a>
+                 <a href="http://www.google.com/+TheStreet" target="_blank" class="gpIcon" rel="publisher" title="Find us on Google+"></a>
+                 <a href="http://www.linkedin.com/company/thestreet" target="_blank" class="lnIcon" title="Follow TheStreet on LinkedIn"></a>
+                 <a href="https://www.youtube.com/user/TheStreetTV" target="_blank" class="utIcon" title="Follow TheStreet on Youtube"></a>
+             </div>
+             <div class="connectTST clearboth">
+    <h4>Email Newsletters</h4>
+    <div class="nlerror"></div>
+    <div class="newsletterDiv" class="clearboth">
+      <form class="connectFORM" name="newsletter-form">
+         <p><input type="checkbox" name="products" value="E-TAB" id="E-TAB"/> After the Bell</p>
+         <p><input type="checkbox" name="products" value="E-TBB" id="E-TBB"/> Before the Bell</p>
+         <p><input type="checkbox" name="products" value="E-TBY" id="E-TBY"/> Jim Cramer's Daily Booyah</p>
+         <p><input type="checkbox" name="products" value="E-MDB" id="E-MDB"/> Midday Bell</p>
+         <p><input type="checkbox" name="products" value="E-TTT" id="E-TTT"/> Top 10</p>
+         <p><input type="checkbox" name="products" value="E-WAL" id="E-WAL"/> Winners & Losers</p>
+         <div class="nlmessage"></div>
+         <div class="newsletterSubmit"></div>
+      </form>
+    </div>
+</div><!-- end of connectTST --></div><!-- end of shareDiv class-->
+     </div><!-- end of shareDiv id -->
+
+    </span>
+
+ </div><!-- end of loginLinks class -->
+
+</div><!-- end of loginLinks id --></div>
+
+<script type="text/javascript">
+    if (device.tablet()) {
+        document.write('<link rel="stylesheet" media="screen" type="text/css" href="http://i.thestreet-static.com/files/tsc/v2008/css/_1437083940100/min/ipad.css"/>');
+    }
+</script>
+
+<div id="hoverfoot">
+           <span id="footerAd">
+              <div  data-type="gpt-ad" class="googleAd "
+              id="div-gpt-ad-toolbar">
+        </div>
+    </span>
+
+           <span id="hoverfoot_topics">
+\t\t\t<a href="http://www.thestreet.com/stock-market-news/10579592/top-rated-stocks/top-rated-stocks.html">Top Rated Stocks</a>
+            <a href="http://www.thestreet.com/stock-market-news/10571219/top-rated-mutual-funds/top-rated-mutual-funds.html">Top Rated Funds</a>
+            <a href="http://www.thestreet.com/stock-market-news/10575864/top-rated-etfs/top-rated-etfs.html">Top Rated ETFs</a>
+        </span>
+   </div>
+<script type="text/javascript">
+
+    if($.cookie('hoverfoot') === null  ) {
+        $('#hoverfoot').fadeIn(3000);
+    //          $('#toggleSpan').removeClass();
+        var date = new Date();
+        var minutes = 1;
+        var seconds = 15;
+        //date.setTime(date.getTime() + (minutes * 60 * 1000));
+        date.setTime(date.getTime() + (seconds * 1000));
+        $.cookie("hoverfoot", "on", { expires: date });
+
+         // settimeout
+        setTimeout(function(){$('#hoverfoot').fadeOut(3000); //*$('#toggleSpan').removeClass(); $('#toggleSpan').addClass('toShow');
+        }, 15000);
+
+    }
+
+</script><a href="#" class="back-to-top" style="display: none;">
+    <i class="fa fa-arrow-circle-up"></i>
+</a>
+
+<script type='text/javascript'>
+
+    // Add a script element as a child of the body
+//    function downloadJSAtOnload() {
+//        var element = document.createElement("script");
+//        element.src = TSCM.cfg.jsBaseUrl + "/jquery/deferredfunctions.js";
+//        document.body.appendChild(element);
+//    }
+//
+//    // Check for browser support of event handling capability
+//    if (window.addEventListener)
+//        window.addEventListener("load", downloadJSAtOnload, false);
+//    else if (window.attachEvent)
+//        window.attachEvent("onload", downloadJSAtOnload);
+//    else window.onload = downloadJSAtOnload;
+
+    (function () {
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+
+        var canonicalUrl = $('link[rel=canonical]').attr('href');
+
+        // if flag is set and same article then hide promo on pagination
+        if (typeof(Storage) != "undefined") {
+            if (localStorage.getItem("canonicalUrl") != canonicalUrl)
+                localStorage.setItem("canonicalUrl", ""); //the person has browsed different article
+        } else {
+            if (getCookie("yahooRef") != canonicalUrl)
+                document.cookie = "yahooRef=''"; //the person has browsed different article
+        }
+    })();
+
+
+    $(document).ready(function () {
+        $(document).bind("tstOnReady", function (event) {
+            $("input#quoteSearch").val("");
+        });
+    });
+
+</script>
+
+
+<script type="text/javascript" src="http://i.thestreet-static.com/files/tsc/v2008/js/_1437083940100/min/jquery/global-bottom.js"></script>
+
+<script type="text/javascript" src="http://i.thestreet-static.com/files/tsc/v2008/js/_1437083940100/min/jquery/deferredfunctions.js"></script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-B8C6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-B8C6');</script>
+<!-- End Google Tag Manager -->
+
+<script type='text/javascript'>
+
+    function getAdSizeFromId(id){
+        adObj={};
+        adObj.targeting={}
+        adObj.zone=forwardSlash+'367/tsc-ratingsreports/ratingsreports-index';
+        adObj.oop=false;
+        if (id=='div-gpt-ad-1340378017326-0-oop'){
+            adObj.targeting.key="ptn";
+            adObj.oop=true;
+            adObj.targeting.value="oop-1";
+        }
+        else if (id=='div-gpt-ad-cau'){
+            adObj.sizes=[[233, 244],[233, 580],[305, 600]];
+        }
+        else if (id=='div-gpt-ad-navpromo'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.collapse = "true";
+            adObj.targeting.value="navpromo";
+            adObj.sizes= [[150, 38]];
+        }
+        else if (id=='div-gpt-ad-brokerage-1'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-1";
+            adObj.sizes= [[334, 46]];
+        }
+        else if (id=='div-gpt-ad-interstitial-oop'){
+            adObj.oop=true;
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="oop-2";
+        }
+        else if (id=='div-gpt-ad-brokerage-2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-2";
+            adObj.sizes= [[334, 46]];
+        }
+        else if (id=='div-gpt-ad-brokerage-3'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-3";
+            adObj.sizes= [[334, 46]];
+        }
+        else if (id=='div-gpt-ad-brokerage-4'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-4";
+            adObj.sizes= [[334, 46]];
+        }
+        else if (id=='div-gpt-ad-brokerage-5'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-5";
+            adObj.sizes= [[334, 46]];
+        }
+        else if (id=='div-gpt-ad-brokerage-6'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-6";
+            adObj.sizes= [[334, 46]];
+        }
+        else if (id=='div-gpt-ad-box'){
+            adObj.targeting.noCollapse="true";
+            adObj.sizes= [[336, 280],[336, 850],[300, 250],[300, 600],[300, 1050]];
+        }
+        else if (id=='div-gpt-ad-toolbar'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="toolbar";
+            adObj.sizes=   [231, 26];
+        }
+        else if (id=='div-gpt-ad-marketdata'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="marketdata";
+            adObj.sizes= [[334, 26]];
+        }
+        else if (id=='div-gpt-ad-remnant-box'){
+            adObj.zone=forwardSlash+'367/remnant.thestreet.com';
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="remnantbox";
+            adObj.sizes=[[336, 280],[300, 250]];
+        }
+        else if (id=='div-gpt-ad-expander'){
+            adObj.zone=forwardSlash+'367/tsc-ratingsreports/ratingsreports-index';
+            adObj.sizes= [[970, 66],[970, 90],[970, 250],[728, 90]];
+        }
+        else if (id=='div-gpt-ad-textlink-1'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="textlink-1";
+            adObj.sizes= [[300, 40]];
+        }
+        else if (id=='div-gpt-ad-textlink-2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="textlink-2";
+            adObj.sizes= [[300, 40]];
+        }
+        else if (id=='div-gpt-ad-textlink-3'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="textlink-3";
+            adObj.sizes= [[300, 40]];
+        }
+        else if (id=='div-gpt-ad-hpmidbox'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpmidbox";
+            adObj.sizes= [[300, 250],[300, 600]];
+        }
+        else if (id=='div-gpt-ad-psTextMid'){
+            adObj.zone=forwardSlash + '367/tsc-thestreet.com/story';
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="pstextmidarticle";
+            adObj.sizes= [[585, 55],[585, 30]];
+        }
+        else if (id=='div-gpt-ad-hpad2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad2";
+            adObj.sizes= [[620, 120]];
+        }
+        else if (id=='div-gpt-ad-hpad3'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad3";
+            adObj.sizes= [[620, 110]];
+        }
+        else if (id=='div-gpt-ad-hpad4'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad4";
+            adObj.sizes=  [[620, 120]];
+        }
+        else if (id=='div-gpt-ad-hpad5'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad5";
+            adObj.sizes= [[620, 110]];
+        }
+        else if (id=='div-gpt-ad-hpad6'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad6";
+            adObj.sizes= [[620, 110]];
+        }
+        else if (id=='div-gpt-ad-hpad7'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad7";
+            adObj.sizes=  [[620, 110]];
+        }
+        else if (id=='div-gpt-ad-hpad8'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad8";
+            adObj.sizes= [[620, 110]];
+        }
+        else if (id=='div-gpt-ad-hpad9'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad9";
+            adObj.sizes= [[620, 110]];
+        }
+        else if (id=='div-gpt-ad-hpad10'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad10";
+            adObj.sizes=  [[620, 110]];
+        }
+        else if (id=='div-gpt-ad-hpad11'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad11";
+            adObj.sizes= [[620, 110]];
+        }
+        else if (id=='div-gpt-ad-hpad12'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="hpad12";
+            adObj.sizes=  [[620, 110]];
+            return adObj;
+        }
+        else if (id=='div-gpt-ad-thirdbox'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="thirdbox";
+            adObj.targeting.noCollapse="true";
+            adObj.sizes= [[300, 250],[300, 600]];
+        }
+        else if (id=='div-gpt-ad-merrilledge1'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="merrilledge1";
+            adObj.sizes=  [[120, 30]];
+            return adObj;
+        }
+        else if (id=='div-gpt-ad-merrilledge2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="merrilledge2";
+            adObj.sizes= [[120, 30]];
+        }
+        else if (id=='div-gpt-ad-freeports-1'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="freereports-1";
+            adObj.sizes=  [[337, 101]];
+            return adObj;
+        }
+        else if (id=='div-gpt-ad-freeports-2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="freereports-2";
+            adObj.sizes= [[337, 101]];
+        }
+        else if (id=='div-gpt-ad-freeports-3'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="freereports-3";
+            adObj.sizes= [[337, 101]];
+            return adObj;
+        }
+        else if (id=='div-gpt-ad-free14days'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="free14days";
+            adObj.sizes= [[219,90]];
+        }
+        else if (id=='div-gpt-ad-brokerage-a1'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-a1";
+            adObj.sizes=   [[120, 60]];
+        }
+        else if (id=='div-gpt-ad-brokerage-a2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-a2";
+            adObj.sizes= [[120, 60]];
+        }
+        else if (id=='div-gpt-ad-brokerage-b1'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-b1";
+            adObj.sizes= [[120, 60]];
+        }
+        else if (id=='div-gpt-ad-brokerage-b2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-b2";
+            adObj.sizes= [[120, 60]];
+        }
+        else if (id=='div-gpt-ad-brokerage-c1'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-c1";
+            adObj.sizes= [[120, 60]];
+        }
+        else if (id=='div-gpt-ad-brokerage-c2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="brokerage-c2";
+            adObj.sizes= [[120, 60]];
+        }
+        else if (id=='div-gpt-ad-leader'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="lb";
+            adObj.sizes= [[728, 90]];
+        }
+        else if (id=='div-gpt-ad-tvmidbox'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="tvmidbox";
+            adObj.sizes= [[300, 250]];
+        }
+        else if (id=='div-gpt-ad-quotes-1'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-1";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-2";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-3'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-3";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-4'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-4";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-5'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-5";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-1-desk'){
+            adObj.targeting.desktopOnly="true";
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-1";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-1-tab'){
+            adObj.targeting.tabletOnly="true";
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-1";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-2-desk'){
+            adObj.targeting.desktopOnly="true";
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-2";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-2-tab'){
+            adObj.targeting.tabletOnly="true";
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-2";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-3-desk'){
+            adObj.targeting.desktopOnly="true";
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-3";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-3-tab'){
+            adObj.targeting.tabletOnly="true";
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-1";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-4-desk'){
+            adObj.targeting.desktopOnly="true";
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-4";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-4-tab'){
+            adObj.targeting.tabletOnly="true";
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-4";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-5-desk'){
+            adObj.targeting.desktopOnly="true";
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-5";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-6'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-1";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-7'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-2";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-8'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-3";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-9'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-4";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-quotes-10'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="quotes-5";
+            adObj.sizes= [[170, 40],[120, 60]];
+        }
+        else if (id=='div-gpt-ad-overlay'){
+            adObj.sizes=  [[600, 400]];
+        }
+        else if (id=='div-gpt-ad-byline'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="byline";
+            adObj.targeting.collapse="true";
+            adObj.sizes= [[120, 30]];
+        }
+
+        else if (id=='div-gpt-ad-psText'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.noCollapse="true";
+            adObj.targeting.value="pstext";
+            adObj.sizes= [[585, 55]];
+        }
+        else if (id=='div-gpt-ad-psTextMid'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="pstextmid";
+            adObj.sizes= [[585, 55],[585,30]];
+        }
+        else if (id=='div-gpt-ad-psTextBtm'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.noCollapse="true";
+            adObj.targeting.value="pstextbtm";
+            adObj.sizes= [[585, 55]];
+        }
+        else if (id=='div-gpt-ad-psTextBtm2'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.noCollapse="true";
+            adObj.targeting.value="pstextbtm2";
+            adObj.sizes= [[585, 55]];
+        }
+        else if (id=='div-gpt-ad-bottomoverlay'){
+            adObj.sizes=[[425, 112]];
+        }
+        else if (id=='div-gpt-ad-welcome'){
+            adObj.zone=forwardSlash + '367/tsc-thestreet.com/overlay';
+            adObj.sizes= [[300,250],[640,480]];
+        }
+        else if (id=='div-gpt-ad-button3'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="px";
+            adObj.sizes= [[375, 75],[170, 40],[334, 26],[120, 60],[231, 26],[600, 50]];
+        }
+        else if (id=='div-gpt-ad-lastposition'){
+            adObj.targeting.key="ptn";
+            adObj.targeting.value="lastposition";
+            adObj.targeting.noCollapse="true";
+            adObj.sizes= [[300, 250],[300, 600],[300, 1050]];
+        }
+        return adObj;
+    }
+
+
+
+function addToTargeting(key, value) {
+    try {
+        if (typeof value == "string") {
+            value = value.toLowerCase();
+            value = clean(value);
+        }
+
+
+        if (targetingValues.hasOwnProperty(key)) {
+            targetingValues[key].push(value);
+        }
+        else {
+            targetingValues[key] = new Array();
+            targetingValues[key][0] = value;
+        }
+    } catch (e) {
+    }
+}
+
+function clean(str) {
+    //   s = s.toLowerCase();
+    var s = str.toString();
+    s = s.toLowerCase();
+    s = s.replace(/ /g, "-");
+    s = s.replace(/\\|\\.|\\[|\\]|\\*|\\!|\\@|#|$|\\%|\\^|\\&|\\(|\\)|\\:|\\'|\\"|\\<|\\>|\\?|\\\\|\\/|\\~|\\`/g, "");
+    return s;
+}
+
+
+function resizeIframe(newHeight, newWidth, id) {
+
+    var ifrm = document.getElementById(id);
+    ifrm.height = parseInt(newHeight, 10);
+    ifrm.width = parseInt(newWidth, 10)
+
+
+}
+
+function animateSlider(data) {
+    $(document).ready(function () {
+        var w = window.innerWidth;
+        var shiftLeft = w/2 - 150;
+        try {
+            $('body').append($('<div/>', {
+                id:'swslider',
+                style:'position: fixed;top: 200px;left:-400px'
+
+            }));
+            $("#swslider").html(data);
+            setTimeout(function () {
+                $("#swslider").animate({"left":shiftLeft}, 1900);
+            }, 6000);
+
+            setTimeout(function () {
+                $("#swslider").hide();
+            }, 26000);
+        } catch (e) {
+        }
+    });
+
+}
+
+function bottomOverlay(data) {
+    $(document).ready(function () {
+        try {
+            var now = new Date();
+            var cookieName = "tstbottomoverlay_" + now.getMonth() + "" + now.getDate() + "" + now.getYear();
+            if (document.cookie.indexOf(cookieName) == -1) {
+                var expires = new Date();
+                expires.setHours(23);
+                expires.setMinutes(59);
+                expires.setSeconds(59);
+                expires = expires.toGMTString();
+                document.cookie = cookieName + "=" + now + ";expires=" + expires + ";path=/;domain=.thestreet.com";
+            }
+            else {
+                return false;
+            }
+            $('body').append($('<div/>', {
+                id:'btmoverlay',
+                style:'position: fixed;bottom:-120px;left:820px'
+            }));
+            $("#btmoverlay").html(data);
+            setTimeout(function () {
+                $("#btmoverlay").animate({"bottom":"0px"}, 1200);
+            }, 15000);
+
+            setTimeout(function () {
+                $("#btmoverlay").hide();
+            }, 30000);
+        } catch (e) {
+        }
+    });
+
+}
+
+
+    var initAds = function(preload) {
+
+        if (typeof googletag !== 'undefined'){
+        var gptAdSlots = {};
+        var forwardSlash = '/';
+        var adsToRender=[];
+        var adPlaceholders=[];
+        var slotsToRefresh=[];
+        googletag.cmd.push(function() {
+
+            $('.googleAd').each(function() {
+
+                var id = this.id;
+                var adSizesArray;
+
+                $adDiv= $( "#" + id );
+                try {
+                    var slot = "";
+                    adSizesArray = getAdSizeFromId(id);
+                    if (preload==true && $adDiv.hasClass("preload") || preload==false &&  !$adDiv.hasClass("preload")) {
+
+                        if ($adDiv.hasClass("placeholder")) {
+                            //dont
+                        }
+
+                        else {
+
+                            if (adSizesArray.targeting.hasOwnProperty('desktopOnly') && !device.desktop()) {
+                                // NO-OP
+
+                            }
+                            else if (adSizesArray.targeting.hasOwnProperty('tabletOnly') && !device.tablet()) {
+                                // NO-OP
+
+                            }
+                            else {
+
+                                if (adSizesArray.oop==true) {
+                                    slot = googletag.defineOutOfPageSlot(adSizesArray.zone, id);
+                                }
+                                else {
+                                    slot = googletag.defineSlot(adSizesArray.zone, adSizesArray.sizes, id);
+                                }
+
+                                if (adSizesArray.targeting.hasOwnProperty('key') && adSizesArray.targeting.hasOwnProperty('value')) {
+                                    slot.setTargeting(adSizesArray.targeting.key, adSizesArray.targeting.value);
+                                }
+                                if (adSizesArray.targeting.hasOwnProperty('noCollapse')) {
+                                    slot.setCollapseEmptyDiv(false);
+                                }
+                                if (adSizesArray.targeting.hasOwnProperty('collapse')) {
+                                    slot.setCollapseEmptyDiv(true,true);
+                                }
+                                if (slot) {
+                                    slot.addService(googletag.pubads())
+                                    gptAdSlots[id] = slot;
+                                    adsToRender.push(id);
+                                    slotsToRefresh.push(gptAdSlots[id]);
+                                }
+                            }
+                        }
+                    }
+                }catch(e){console.log("ad error" + e + " " + id)}
+            });
+
+
+            var rsi_segs = [];
+            var segs_beg = document.cookie.indexOf('rsi_segs=');
+            if (segs_beg >= 0) {
+                segs_beg = document.cookie.indexOf('=', segs_beg) + 1;
+                if (segs_beg > 0) {
+                    var segs_end = document.cookie.indexOf(';', segs_beg);
+                    if (segs_end == -1) segs_end = document.cookie.length;
+                    rsi_segs = document.cookie.substring(segs_beg, segs_end)
+                            .split('|');
+                }
+            }
+
+            googletag.pubads().setTargeting("rsi", rsi_segs.slice(0, 20));
+            targetingValues = {};
+            try {
+                addToTargeting("kval", $.url().param('kval'));
+            } catch (e) {
+            }
+            
+
+            for (var key in targetingValues) {
+                googletag.pubads().setTargeting(key, targetingValues[key]);
+            }
+
+
+                googletag.pubads().collapseEmptyDivs();
+                googletag.pubads().enableSingleRequest();
+                googletag.pubads().disableInitialLoad();
+                googletag.enableServices();
+
+
+
+            for (var adsToRenderId in adsToRender){
+
+                googletag.display(adsToRender[adsToRenderId]);
+
+            }
+            if  (slotsToRefresh.length>0) {
+                googletag.cmd.push(function() {
+                    googletag.pubads().refresh(slotsToRefresh);
+                })
+            }
+
+        });
+
+        }
+
+    };
+
+    //$(document).ready(function () {
+    initAds(true);
+    //})
+    tstOnreadyDefer.done(function( ) {
+        initAds(false);
+    })
+</script></body>
+</html>'

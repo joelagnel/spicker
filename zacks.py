@@ -8,29 +8,6 @@ import urllib.request
 import re
 match_last_price = re.compile("([0-9\.]+)")
 
-class ZStock(Stock):
-	def __init__(self, symbol):
-		Stock.__init__(self, symbol)
-		self.z_rating = -1
-
-	def update_latest(self):
-		print("Updating " + self.symbol)
-		zfs = zacksFetchStock()
-		zfs.update_stock(self)
-		if self.z_rating == 1:
-			self.rating = self.R_BUY
-		elif self.z_rating <= 3:
-			self.rating = self.R_HOLD
-		elif self.zrating > 3 and self.zrating <= 5:
-			self.rating = self.R_SELL
-		else:
-			raise Exception("Invalid z_rating found during parsing stock")
-
-	def __repr__(self):
-		base = Stock.__repr__(self)
-		base = base + " ZRating: " + str(self.z_rating)
-		return base
-
 class zacksFetchStock(HTMLParser):
 	unknown = 1
 	div_found = 2
@@ -39,10 +16,14 @@ class zacksFetchStock(HTMLParser):
 	p_last_price = 5
 	p_net_change = 6
 	state = unknown
-	stock = None
-	
-	def update_stock(self, stock):
+	zstock = None
+
+	def __init__(self, stock):
+		assert type(stock) == Stock
+		HTMLParser.__init__(self)
 		self.stock = stock
+	
+	def update_stock(self):
 		if self.stock.symbol == "":
 			return
 		response = urllib.request.urlopen('http://www.zacks.com/stock/quote/' + self.stock.symbol)
@@ -100,7 +81,15 @@ class zacksFetchStock(HTMLParser):
 			return
 		# Rank
 		if self.state == self.span_found and data != "&nbsp;":
-			self.stock.z_rating = int(data)
+			z_rating = int(data)
+			if z_rating == 1:
+				self.stock.set_rating(self.stock.rating.R_BUY)
+			elif z_rating <= 3:
+				self.stock.set_rating(self.stock.rating.R_HOLD)
+			elif z_rating > 3 and self.zrating <= 5:
+				self.stock.set_rating(self.stock.rating.R_SELL)
+			else:
+				raise Exception("Invalid z_rating found during parsing stock")
 			# We consider finding the Rank as the end of any processing
 			self.state = self.end
 		# Price
@@ -148,7 +137,7 @@ class zacksFetchTop(HTMLParser):
 		elif (self.state == self.tbody_found or self.state == self.end_of_tr) and tag == "tr":
 			self.state = self.tr_found
 		elif self.state == self.tr_found and tag == "td":
-			self.cur_stock = ZStock("");
+			self.cur_stock = Stock("");
 			self.all_stocks.append(self.cur_stock)
 			self.state = self.td_name_found
 		elif tag == "td":
@@ -175,7 +164,8 @@ class zacksFetchTop(HTMLParser):
 			# We're done getting all top stocks, now goto individual stocks
 			# and update the change
 			for s in self.all_stocks:
-				s.update_latest()
+				tf = zacksFetchStock(s)
+				tf.update_stock()
 			# Only include strong buys
 			self.all_stocks = list(filter(lambda x: x.z_rating == 1, self.all_stocks))
 		elif tag == "tr":
@@ -203,7 +193,7 @@ class zacksFetchTop(HTMLParser):
 		# print("Encountered some data, :", data, " len ", len(data))
 
 	# Current this only updates the Name, symbol, price and ranking of
-	# the top stocks on zack.com, change value is updated directly by ZStock class
+	# the top stocks on zack.com, change value is updated directly by Stock class
 	def fetch_parse(self):
 		response = urllib.request.urlopen('http://www.zacks.com/')
 		html = str(response.read())
@@ -226,7 +216,22 @@ def get_top_stocks():
 	zf_income.fetch_parse()
 	return zf_growth.all_stocks + zf_income.all_stocks
 
+def zacks_update_stock(s):
+	assert type(s) == Stock
+	tf = zacksFetchStock(s)
+	tf.update_stock()
+	
+def get_rating(s):
+	assert type(s) == str and s != ""
+	st = Stock(s)
+	zacks_update_stock(st)
+	return st.rating
+
 if __name__ == "__main__":
-	all = get_top_stocks()
-	for s in all:
-		print(s)
+	# all = get_top_stocks()
+	# for s in all:
+	#	print(s)
+	r = get_rating("AMZN")
+	print(r)
+
+
