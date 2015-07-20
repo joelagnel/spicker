@@ -209,6 +209,11 @@ class zacksFetchTopGrowth(zacksFetchTop):
 class zacksFetchTopIncome(zacksFetchTop):
 	topmover_cat = "income"
 
+def zacks_update_stock(s):
+	assert type(s) == Stock
+	tf = zacksFetchStock(s)
+	tf.update_stock()
+	
 def get_top_stocks():
 	zf_growth = zacksFetchTopGrowth()
 	zf_growth.fetch_parse()
@@ -216,11 +221,6 @@ def get_top_stocks():
 	zf_income.fetch_parse()
 	return zf_growth.all_stocks + zf_income.all_stocks
 
-def zacks_update_stock(s):
-	assert type(s) == Stock
-	tf = zacksFetchStock(s)
-	tf.update_stock()
-	
 def get_rating(s):
 	assert type(s) == str and s != ""
 	st = Stock(s)
